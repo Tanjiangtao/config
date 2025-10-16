@@ -1,0 +1,101 @@
+[2025-10-13 14:26:18.334] [info]  [199dc3f3ab8][hot update] ------------ app 启动分界线 ------------
+[2025-10-13 14:26:18.343] [info]  [199dc3f3ab8][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 14:26:18.343] [info]  [199dc3f3ab8][hot update] hotUpdateApi clearOldVersions start
+[2025-10-13 14:26:18.343] [info]  [199dc3f3ab8][hot update] {
+  "baseVersion": "3.2.19-39038",
+  "curVersion": "3.2.19-39038",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "39038",
+  "unzipRetryCount": 0
+}
+[2025-10-13 14:26:18.343] [info]  [199dc3f3ab8][hot update] dnsDefaultOrder:verbatim
+[2025-10-13 14:26:18.419] [info]  [199dc3f3ab8][hot update] ----- startUpdate -----
+[2025-10-13 14:26:18.428] [info]  [199dc3f3ab8][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 14:26:18.429] [info]  [199dc3f3ab8][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-13 14:26:18.429] [info]  [199dc3f3ab8][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-13 14:26:18.430] [info]  [199dc3f3ab8][hot update] [startUpdate] 无需更新
+[2025-10-13 14:31:41.075] [info]  [199dc4478c1][hot update] setLauncherCounts suc 1
+[2025-10-13 15:13:10.640] [info]  [199dc3f3ab8][hot update] setLauncherCounts suc 0
+[2025-10-13 15:20:09.803] [info]  [199dc70cbd7][hot update] ------------ app 启动分界线 ------------
+[2025-10-13 15:20:09.812] [info]  [199dc70cbd7][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 15:20:09.812] [info]  [199dc70cbd7][hot update] hotUpdateApi clearOldVersions start
+[2025-10-13 15:20:09.813] [info]  [199dc70cbd7][hot update] {
+  "baseVersion": "3.2.19-39038",
+  "curVersion": "3.2.19-39038",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "39038",
+  "unzipRetryCount": 0
+}
+[2025-10-13 15:20:09.814] [info]  [199dc70cbd7][hot update] dnsDefaultOrder:verbatim
+[2025-10-13 15:20:09.876] [info]  [199dc70cbd7][hot update] ----- startUpdate -----
+[2025-10-13 15:20:09.884] [info]  [199dc70cbd7][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 15:20:09.885] [info]  [199dc70cbd7][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-13 15:20:09.886] [info]  [199dc70cbd7][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-13 15:20:09.887] [info]  [199dc70cbd7][hot update] [startUpdate] 无需更新
+[2025-10-13 15:39:17.068] [info]  [199dc822533][hot update] setLauncherCounts suc 1
+[2025-10-13 16:20:10.909] [info]  [199dc70cbd7][hot update] ----- startUpdate -----
+[2025-10-13 16:20:10.914] [info]  [199dc70cbd7][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 16:20:10.915] [info]  [199dc70cbd7][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-13 16:20:10.915] [info]  [199dc70cbd7][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-13 16:20:10.916] [info]  [199dc70cbd7][hot update] [startUpdate] 无需更新
+[2025-10-13 17:20:10.910] [info]  [199dc70cbd7][hot update] ----- startUpdate -----
+[2025-10-13 17:20:10.915] [info]  [199dc70cbd7][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 17:20:10.916] [info]  [199dc70cbd7][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-13 17:20:10.916] [info]  [199dc70cbd7][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-13 17:20:10.917] [info]  [199dc70cbd7][hot update] [startUpdate] 无需更新
+[2025-10-13 18:20:20.418] [info]  [199dc70cbd7][hot update] ----- startUpdate -----
+[2025-10-13 18:20:20.424] [info]  [199dc70cbd7][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-13 18:20:20.425] [info]  [199dc70cbd7][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-13 18:20:20.425] [info]  [199dc70cbd7][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-13 18:20:20.426] [info]  [199dc70cbd7][hot update] [startUpdate] 无需更新
+[2025-10-13 18:43:12.318] [info]  [199dc70cbd7][hot update] setLauncherCounts suc 0
+[2025-10-15 11:57:34.438] [info]  [199e6040aad][hot update] ------------ app 启动分界线 ------------
+[2025-10-15 11:57:34.444] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 11:57:34.444] [info]  [199e6040aad][hot update] hotUpdateApi clearOldVersions start
+[2025-10-15 11:57:34.445] [info]  [199e6040aad][hot update] {
+  "baseVersion": "3.2.19-39038",
+  "curVersion": "3.2.19-39038",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "39038",
+  "unzipRetryCount": 0
+}
+[2025-10-15 11:57:34.445] [info]  [199e6040aad][hot update] dnsDefaultOrder:verbatim
+[2025-10-15 11:57:34.522] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 11:57:34.530] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 11:57:34.531] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 11:57:34.531] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 11:57:34.534] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 12:57:34.563] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 12:57:34.574] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 12:57:34.576] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 12:57:34.576] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 12:57:34.577] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 13:57:34.532] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 13:57:34.538] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 13:57:34.539] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 13:57:34.539] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 13:57:34.540] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 14:57:34.556] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 14:57:34.560] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 14:57:34.561] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 14:57:34.561] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 14:57:34.562] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 15:57:34.519] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 15:57:34.527] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 15:57:34.528] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 15:57:34.528] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 15:57:34.529] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 16:57:47.913] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 16:57:47.920] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 16:57:47.921] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 16:57:47.922] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 16:57:47.923] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 17:57:47.957] [info]  [199e6040aad][hot update] ----- startUpdate -----
+[2025-10-15 17:57:47.961] [info]  [199e6040aad][hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2025-10-15 17:57:47.962] [info]  [199e6040aad][hot update] hotUpdateApi start check  3.2.19-39038  IsOnErrorVersion
+[2025-10-15 17:57:47.963] [info]  [199e6040aad][hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2025-10-15 17:57:47.964] [info]  [199e6040aad][hot update] [startUpdate] 无需更新
+[2025-10-15 18:22:16.700] [info]  [199e6040aad][hot update] setLauncherCounts suc 0

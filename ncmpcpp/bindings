@@ -1,0 +1,233 @@
+# vim.ft:conf
+# 快捷键绑定配置文件（用于 ncmpcpp）
+# @作者：nate zhou
+# @时间：2023,2024,2025
+# 说明：为基于 ncurses 的音乐播放器客户端 ncmpcpp 配置类 Vim 风格快捷键
+
+
+# ===================== 播放控制相关快捷键 =====================
+# 按 p 键：暂停/继续播放
+def_key "p"
+  pause
+
+# 按 f 键：快进
+def_key "f"
+  seek_forward
+
+# 按 b 键：快退
+def_key "b"
+  seek_backward
+
+# 按 . 键：播放下一首
+def_key "."
+    next
+
+# 按 , 键：播放上一首
+def_key ","
+    previous
+
+# 按 z 键：切换随机播放模式（开启/关闭）
+def_key "z"
+  toggle_random
+
+# 按 Z 键：打乱当前播放列表顺序
+def_key "Z"
+  shuffle
+
+# 按 r 键：切换循环播放模式（开启/关闭）
+def_key "r"
+  toggle_repeat
+
+# 按 s 键：切换单曲循环模式（开启/关闭）
+def_key "s"
+  toggle_single
+
+# 按 + 键：增大音量
+def_key "+"
+    volume_up
+
+# 按 = 键：增大音量（与 + 键功能相同，备用）
+def_key "="
+    volume_up
+
+# 按 i 键：显示当前歌曲的详细信息
+def_key "i"
+  show_song_info
+
+# 按 I 键：显示当前歌曲艺术家的相关信息
+def_key "I"
+  show_artist_info
+
+# 按 L 键：显示当前歌曲的歌词
+def_key "L"
+  show_lyrics
+
+
+# ===================== 播放列表操作快捷键 =====================
+# 按 d 键：删除已保存的播放列表
+def_key "d"
+  delete_stored_playlist
+
+# 按 c 键：清空当前播放列表
+def_key "c"
+  clear_playlist
+
+# 按 c 键：清空主播放列表（与上一条功能一致，重复定义确保生效）
+def_key "c"
+  clear_main_playlist
+
+# 按 x 键：删除播放列表中选中的项目
+def_key "x"
+  delete_playlist_items
+
+# 按 a 键：将选中的项目添加到播放列表
+def_key "a"
+  add_selected_items
+
+# 按 S 键：保存当前播放列表（防止丢失）
+def_key "S"
+  save_playlist
+
+
+# ===================== 导航与浏览快捷键 =====================
+# 按 $ 键：快速跳转到当前正在播放的歌曲位置
+def_key "$"
+  jump_to_playing_song
+
+# 按 ~ 键：跳转到媒体库界面
+def_key "~"
+  jump_to_media_library
+
+# 按 j 键：向下滚动列表（类 Vim 操作逻辑）
+def_key "j"
+    scroll_down
+
+# 按 k 键：向上滚动列表（类 Vim 操作逻辑）
+def_key "k"
+    scroll_up
+
+# 按 h 键：切换到前一列（多列显示时）
+def_key "h"
+    previous_column
+
+# 按 l 键：切换到后一列（多列显示时）
+def_key "l"
+    next_column
+
+# 按 h 键：返回上级目录（浏览文件时）
+def_key "h"
+  jump_to_parent_directory
+
+# 按 l 键：进入当前选中的目录（浏览文件时）
+def_key "l"
+  enter_directory
+
+# 按 l 键：执行当前选中项目的默认操作
+def_key "l"
+  run_action
+
+# 按 l 键：播放当前选中的歌曲
+def_key "l"
+  play_item
+
+# 按 Ctrl+p 键：向上翻页
+def_key "ctrl-p"
+    page_up
+
+# 按 Ctrl+u 键：向上翻页（与 Ctrl+p 功能相同，备用）
+def_key "ctrl-u"
+    page_up
+
+# 按 Ctrl+n 键：向下翻页
+def_key "ctrl-n"
+    page_down
+
+# 按 Ctrl+d 键：向下翻页（与 Ctrl+n 功能相同，备用）
+def_key "ctrl-d"
+    page_down
+
+# 按 G 键：跳转到列表末尾
+def_key "G"
+  move_end
+
+# 按 g 键：跳转到列表开头
+def_key "g"
+  move_home
+
+# 按 n 键：跳转到下一个搜索结果
+def_key "n"
+    next_found_item
+
+# 按 N 键：跳转到上一个搜索结果
+def_key "N"
+    previous_found_item
+
+# 按 M 键：显示媒体库界面
+def_key "M"
+  show_media_library
+
+# 按 m 键：切换媒体库的列显示模式（如双列/三列切换）
+def_key "m"
+  toggle_media_library_columns_mode
+
+# 按 t 键：显示标签编辑器（用于修改歌曲的元数据，如歌手、专辑名等）
+def_key "t"
+  show_tag_editor
+
+# 按 U 键：更新音乐数据库（识别新增/删除的歌曲）
+def_key "U"
+  update_database
+
+# 按 S 键：重置搜索引擎（清空之前的搜索条件）
+def_key "S"
+  reset_search_engine
+
+# 按 S 键：显示搜索引擎（打开搜索输入框）
+def_key "S"
+  show_search_engine
+
+# 按 P 键：显示播放列表界面
+def_key "P"
+  show_playlist
+
+
+# ===================== 主/副屏幕控制快捷键 =====================
+# 按 o 键：锁定/解锁屏幕布局（防止误触改变界面结构）
+def_key "o"
+  toggle_screen_lock
+
+# 按 Ctrl+h 键：切换到主屏幕
+def_key "ctrl-h"
+  master_screen
+
+# 按 Ctrl+l 键：切换到副屏幕（多屏幕布局时）
+def_key "ctrl-l"
+  slave_screen
+
+
+# ===================== 选择操作快捷键 =====================
+# 按 v 键：反选当前选中的项目（取消已选、选中未选）
+def_key "v"
+  reverse_selection
+
+# 按 u 键：取消所有已选中的项目
+def_key "u"
+  remove_selection
+
+# 按 B 键：选中当前专辑的所有歌曲
+def_key "B"
+  select_album
+
+# 按空格键：选中当前项目，并自动向下滚动（方便连续选择）
+def_key "space"
+  select_item
+  scroll_down
+
+# 按 J 键：将选中的项目向下移动（调整播放列表顺序）
+def_key "J"
+  move_selected_items_down
+
+# 按 K 键：将选中的项目向上移动（调整播放列表顺序）
+def_key "K"
+  move_selected_items_up
+

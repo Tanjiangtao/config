@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <License Id="Terms" IssueDate="2025-10-14T09:56:56.350Z" Version="1.0">
+    <EntitlementGroups>
+      <EntitlementGroup Id="ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsIgp9" Product="Unity Personal Version">
+        <Context>
+          <StartDate>2021-08-23T08:16:34Z</StartDate>
+          <UpdateDate>2025-11-13T09:56:56.366Z</UpdateDate>
+          <Identifiers>
+            <Identifier Id="25ce1e981cf74b3e9a1464feea93f75c" Type="Legacy.MachineBinding1" />
+            <Identifier Id="25ce1e981cf74b3e9a1464feea93f75c" Type="Legacy.MachineBinding2" />
+            <Identifier Id="Archlinux" Type="EnvironmentHostname" />
+            <Identifier Id="Archlinux" Type="EnvironmentDomain" />
+          </Identifiers>
+        </Context>
+        <Entitlements>
+          <Entitlement Id="com.unity.editor" />
+          <Entitlement Id="com.unity.editor.ui" />
+          <Entitlement Id="com.unity.editor.headless" />
+          <Entitlement Id="com.unity.editor.dark-skin" />
+          <Entitlement Id="com.unity.editor.legacy.team-license" />
+          <Entitlement Id="com.unity.editor.platforms.android" />
+          <Entitlement Id="com.unity.editor.platforms.ios" />
+          <Entitlement Id="com.unity.editor.platforms.uwp" />
+          <Entitlement Id="com.unity.editor.platforms.openharmony" />
+          <Entitlement Id="com.unity.editor.platforms.minigame" />
+        </Entitlements>
+      </EntitlementGroup>
+    </EntitlementGroups>
+  </License>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#Terms">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>tP40dua+zVpXXyVI0v8MVYMRAkU=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>HrdK35Xd8Nl22dUVT5W48R1j1KGRHjZhtisvJcdoruTsLS2UBXvzq+XDT0d18kUP1Xu6YNAnS/UI
+/+pN0OJlzOg1YK9IDw/PYeeqB2Y4dXStWSFMelxtgD5OvdiboPXY49TpYOMfNHfFF1TGteqKljJo
+0qnm0wBPZS1upC5OUYtC7E8rkouwHHwnKi5lzsPlYj/VnXxzmcd8fGKGzblfNMxcI+Dw7gIo3jJW
+uGfB3a0okiC/GliP4WLF5sbjnO78l+MiWM/OmmzpJy8EB/4+CRtNHdLvJfsSE5RzaoQWdO4OF0Gk
+NOwJSdBBq3VVfvHwSLZp79vBDj508YQX1ZQB4Q==</SignatureValue>
+  </Signature>
+</root>

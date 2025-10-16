@@ -1,0 +1,35 @@
+{
+  "name": "com.unity.package-manager.metadata-2022.3",
+  "version": "0.0.67",
+  "description": "Contains metadata used by the 2022.3 Unity Editor.",
+  "category": "",
+  "files": [
+    "manifest-overrides.json"
+  ],
+  "upmCi": {
+    "footprint": "f2a8ab04e6e9e4656dc47c01707ccd19e37e2b54"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/rm-remote-upm-package-metadata",
+    "revision": "3f1c2ea08bb06b925f75f3946e7de233e7bfa774"
+  },
+  "_id": "com.unity.package-manager.metadata-2022.3@0.0.67",
+  "_integrity": "sha512-wm0u8J6/LbQMTXvaH/+VOmylTq0T1Yit8wYLr76GnLCSKuTjZLWxbDxUBe9VOy8ue7LupakRCZHf1B+e4XBmwQ==",
+  "dist": {
+    "shasum": "f3dd9821cb7fcf2f1e22e14845ad74ad7990060c",
+    "tarball": "https://download-packages.unity.cn/com.unity.package-manager.metadata-2022.3/-/com.unity.package-manager.metadata-2022.3-0.0.67.tgz"
+  },
+  "searchablePackages": [
+    "com.unity.instantgame",
+    "com.unity.xr.arstand",
+    "com.unity.hmi",
+    "com.unity.adaptiveperformance.oppo.android",
+    "cn.tuanjie.minihost"
+  ],
+  "type": "metadata",
+  "_time": "2025-08-20T09:41:06Z",
+  "entitlementsInfo": {
+    "licenseType": "public"
+  },
+  "cnTags": []
+}

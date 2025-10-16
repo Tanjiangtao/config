@@ -1,0 +1,11 @@
+Description=Stasis Idle Manager
+After=graphical-session.target niri.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/stasis daemon
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,27 @@
+# Profiles Config for Clash Verge
+
+current: rIbH9olgMaTU
+chain: null
+valid:
+- dns
+- sub-rules
+- unified-delay
+items:
+- uid: rIbH9olgMaTU
+  type: remote
+  name: iKuuu_V2.yaml
+  file: rIbH9olgMaTU.yaml
+  url: https://api.sub-100.one/link/xdUvtxB2H6XMAVUs?clash=3
+  selected:
+  - name: 🔰 选择节点
+    now: 🇭🇰 香港Z03 | IEPL
+  - name: GLOBAL
+    now: 🇭🇰 香港Z02 | IEPL
+  extra:
+    upload: 510322282
+    download: 96143101523
+    total: 322122547200
+    expire: 1780756368
+  updated: 1760588520
+  option:
+    update_interval: 360

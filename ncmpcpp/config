@@ -1,0 +1,84 @@
+# 作者：tantao 
+# 时间：2025
+
+# ncmpcpp 配置文件存放目录
+ncmpcpp_directory = ~/.config/ncmpcpp
+# 歌词文件存储目录
+lyrics_directory = ~/Music/.lyrics
+# MPD 服务器主机地址（本地主机）
+mpd_host = localhost
+# MPD 服务器端口号（默认6600）
+mpd_port = 6600
+# 连接 MPD 服务器的超时时间（秒）
+mpd_connection_timeout = 5
+# MPD 管理的音乐文件存放目录
+mpd_music_dir = ~/Music
+# 歌曲切换时的交叉淡入淡出时间（秒）
+mpd_crossfade_time = 5
+# 启动时默认显示的界面（播放列表）
+startup_screen = playlist
+# 启动时默认显示的副界面（空表示不显示）
+startup_slave_screen = ""
+# 启动时是否聚焦到副界面
+startup_slave_screen_focus = yes
+# 锁定界面的宽度比例（百分比）
+locked_screen_width_part = 60
+# 锁定界面时是否询问宽度比例
+ask_for_locked_screen_width_part = no
+# 启动时是否自动跳转到当前播放的歌曲
+jump_to_now_playing_song_at_start = yes
+# 清空播放列表前是否询问确认
+ask_before_clearing_playlists = yes
+# 时钟是否显示秒数
+clock_display_seconds = no
+# 是否显示音量等级
+display_volume_level = yes
+# 是否显示歌曲比特率
+display_bitrate = yes
+# 用于编辑标签的外部编辑器（此处为Neovim）
+external_editor = nvim
+# 是否使用控制台编辑器
+use_console_editor = yes
+# 使用的正则表达式语法（扩展模式）
+regular_expressions = extended
+# 媒体库双列显示时的宽度比例
+media_library_column_width_ratio_two = 1:2
+# 媒体库三列显示时的宽度比例
+media_library_column_width_ratio_three = 3:3:2
+
+# 歌词相关设置
+# 是否自动跟随当前播放歌曲显示歌词
+follow_now_playing_lyrics = yes
+# 是否在后台自动获取当前歌曲的歌词
+fetch_lyrics_for_current_song_in_background = no
+
+# 显示格式设置
+# 播放列表中歌曲信息的显示格式定义：
+# (20)[]{a}：显示歌手（宽度20）
+# (6f)[green]{NE}：显示歌曲编号（绿色，宽度6）
+# (50)[cyan]{t|f:Title}：显示标题（青色，宽度50，无标题时显示"Title"）
+# (20)[cyan]{b}：显示专辑（青色，宽度20）
+# (7f)[magenta]{l}：显示时长（品红，宽度7）
+song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[cyan]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+
+### 颜色设置 ###
+# 主窗口的颜色代码（对应终端颜色方案）
+main_window_color = 188
+# 当前播放项的前缀样式（青色）
+current_item_prefix = $(cyan)$r
+# 非活跃列中当前项的前缀样式（蓝色）
+current_item_inactive_column_prefix = $(blue)$r
+# 选中项的前缀样式（颜色代码4，通常为红色）
+selected_item_prefix = $4
+# 播放列表高亮延迟时间（0表示无延迟）
+playlist_disable_highlight_delay = 0
+# 进度条颜色（青色）
+progressbar_color = "cyan"
+# 已播放部分的进度条颜色（青色）
+progressbar_elapsed_color = "cyan"
+
+# "正在播放"提示的前缀样式（黄色，加粗）
+now_playing_prefix = $b$(yellow)$r
+# "正在播放"提示的后缀样式（重置格式）
+now_playing_suffix = $/r$/b$(end)
+

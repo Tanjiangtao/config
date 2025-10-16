@@ -1,0 +1,171 @@
+{
+  "dist-tags": {
+    "latest": "1.1.0"
+  },
+  "versions": {
+    "1.1.0": {
+      "name": "com.unity.services.moderation",
+      "version": "1.1.0",
+      "displayName": "Moderation",
+      "description": "Unity Moderation makes toxicity-management accessible, impactful, and insightful. The service providing developers with the tools they need to grow and maintain healthy communities within their games.",
+      "dependencies": {
+        "com.unity.services.core": "1.11.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.1/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "acd88ffe179fb0d8f9a04f718ac723f1b43f5ca8",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.1.0.tgz"
+      },
+      "_upm": {
+        "changelog": "### Changed\n- Updated the minimum supported Editor version to 2021.3.\n- Updated player cache duration to 60 min to match Safe text in the moderation dashboard\n### Removed\n - Removed Safevoice mentions as the service is being discontinued."
+      }
+    },
+    "1.0.1": {
+      "name": "com.unity.services.moderation",
+      "version": "1.0.1",
+      "displayName": "Moderation",
+      "description": "Unity Moderation makes toxicity-management accessible, impactful, and insightful. The service providing developers with the tools they need to grow and maintain healthy communities within their games.",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.core": "1.11.0"
+      },
+      "unity": "2020.3",
+      "_upm": {
+        "changelog": "### Bugfix\n- Fixed a bug where package compilation would fail if Vivox is used alongside Moderation"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.0/manual/index.html",
+      "dist": {
+        "shasum": "c0b3644c08e3d6965820531d2d781012d4e2b4e8",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.0.1.tgz"
+      }
+    },
+    "1.0.0": {
+      "name": "com.unity.services.moderation",
+      "version": "1.0.0",
+      "displayName": "Moderation",
+      "description": "Unity Moderation makes toxicity-management accessible, impactful, and insightful. The service providing developers with the tools they need to grow and maintain healthy communities within their games.",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.core": "1.11.0"
+      },
+      "unity": "2020.3",
+      "_upm": {
+        "changelog": "### Added\n- documentation for all public APIs of the Moderation SDK\n### Removed\n- experimental player custom properties feature"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.0/manual/index.html",
+      "dist": {
+        "shasum": "b336e16aed225f6fb149a52ec604a006a3b5ec23",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.0.0.tgz"
+      }
+    },
+    "1.0.0-pre.3": {
+      "name": "com.unity.services.moderation",
+      "version": "1.0.0-pre.3",
+      "displayName": "Moderation",
+      "description": "Unity Moderation aims to make toxicity-management accessible, impactful, and insightful – providing developers with the tools they need to grow and maintain healthy communities within their games..",
+      "category": "",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.core": "1.11.0"
+      },
+      "unity": "2020.3",
+      "relatedPackages": {
+        "com.unity.services.moderation.tests": "1.0.0-pre.3"
+      },
+      "_upm": {
+        "changelog": "### Added\n - Added Apple Privacy Manifest\n### Bugfix\n- Fixed a bug where Package initialization would crash if Vivox was part of the project dependencies."
+      },
+      "upmCi": {
+        "footprint": "34202d88952688f3701d807bee6ad1b823dd2c45"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "8fb4f816f9586c8b6eabb6e771cb9f7c20020208"
+      },
+      "dist": {
+        "shasum": "be4eeb8a66f37d91ea6b919483f5a170a4991630",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.0.0-pre.3.tgz"
+      }
+    },
+    "1.0.0-pre.2": {
+      "name": "com.unity.services.moderation",
+      "version": "1.0.0-pre.2",
+      "displayName": "Moderation",
+      "description": "Unity Moderation aims to make toxicity-management accessible, impactful, and insightful – providing developers with the tools they need to grow and maintain healthy communities within their games..",
+      "category": "",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.core": "1.11.0"
+      },
+      "unity": "2020.3",
+      "relatedPackages": {
+        "com.unity.services.moderation.tests": "1.0.0-pre.2"
+      },
+      "_upm": {
+        "changelog": "### Bugfix\n - Lowered minimum Vivox-Unity dependency to 16.0.0-pre.1 for automatic Vivox information collection."
+      },
+      "upmCi": {
+        "footprint": "3cb8812be3b5c0dec2e03dc3adfd5437126d4c62"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "6ac6337d18e4f922e591b1eed3880241295a9438"
+      },
+      "dist": {
+        "shasum": "6cabc46a01069d1f36bc6a7a5a8234fa3cc59384",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.0.0-pre.2.tgz"
+      }
+    },
+    "1.0.0-pre.1": {
+      "name": "com.unity.services.moderation",
+      "version": "1.0.0-pre.1",
+      "displayName": "Moderation",
+      "description": "Unity Moderation aims to make toxicity-management accessible, impactful, and insightful – providing developers with the tools they need to grow and maintain healthy communities within their games..",
+      "category": "",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.core": "1.11.0"
+      },
+      "unity": "2020.3",
+      "relatedPackages": {
+        "com.unity.services.moderation.tests": "1.0.0-pre.1"
+      },
+      "_upm": {
+        "changelog": "### Report Creation revamped\n- Report is now created through the Moderation instance.\n- Report now contains the vivox informations (and channels) that will be sent to the service, allowing for the game developer to alter it."
+      },
+      "upmCi": {
+        "footprint": "85364a0583cd39410a8b598029e3309ef14aba3d"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.moderation@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "9780180959742d1dddb7ac0fb628e352392f08d2"
+      },
+      "dist": {
+        "shasum": "d92ea9b3cf6e13f6f5cd1e48be1584ca4fa15f25",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.moderation/-/com.unity.services.moderation-1.0.0-pre.1.tgz"
+      }
+    }
+  },
+  "etag": "\"33625d1c884bfe07e726a2a95691e1f0\"",
+  "provider": "upm",
+  "name": "com.unity.services.moderation",
+  "description": "Unity Moderation makes toxicity-management accessible, impactful, and insightful. The service providing developers with the tools they need to grow and maintain healthy communities within their games.",
+  "_id": "com.unity.services.moderation",
+  "cnTags": [],
+  "time": {
+    "1.1.0": "2025-04-03T03:19:01Z",
+    "1.0.1": "2024-10-18T20:23:45Z",
+    "1.0.0": "2024-10-17T18:48:08Z",
+    "1.0.0-pre.3": "2024-03-19T16:48:31Z",
+    "1.0.0-pre.2": "2023-11-14T20:55:27Z",
+    "1.0.0-pre.1": "2023-10-06T16:02:10Z"
+  }
+}

@@ -1,0 +1,42 @@
+[2025-10-14T09:56:56.396Z][INFO] Command-line: /home/tantao/Unity/Hub/Editor/2022.3.62f2/Editor/Data/Resources/PackageManager/Server/UnityPackageManager -s 94921 -ipc -ipc-path /tmp/Unity-Upm-94921.sock -l 2
+[2025-10-14T09:56:56.401Z][INFO] IPC server started (IPC path=/tmp/Unity-Upm-94921.sock).
+[2025-10-14T09:56:56.402Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-94921.
+[2025-10-14T09:56:57.010Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:57.022Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:57.036Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2025-10-14T09:56:57.049Z][INFO] config:project:get-registries --> 200 (13 ms)
+[2025-10-14T09:56:57.198Z][INFO] project:list-packages --> 200 (188 ms)
+[2025-10-14T09:56:59.075Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:59.085Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:59.096Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2025-10-14T09:56:59.101Z][INFO] config:project:get-registries --> 200 (5 ms)
+[2025-10-14T09:56:59.186Z][INFO] project:list-packages --> 200 (101 ms)
+[2025-10-14T09:56:59.782Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:59.792Z][INFO] project:list-packages <-- Request received
+params: {}
+[2025-10-14T09:56:59.860Z][INFO] project:list-packages --> 200 (78 ms)
+[2025-10-14T09:57:00.308Z][INFO] project:list-packages --> 200 (1233 ms)
+[2025-10-14T09:57:00.309Z][INFO] project:list-packages --> 200 (517 ms)
+[2025-10-14T09:57:00.309Z][INFO] project:list-packages --> 200 (3287 ms)
+[2025-10-14T09:58:23.328Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2025-10-14T09:58:23.335Z][INFO] config:project:get-registries --> 200 (7 ms)
+[2025-10-14T10:00:14.926Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2025-10-14T10:00:14.929Z][INFO] config:project:get-registries --> 200 (3 ms)
+[2025-10-14T10:00:28.237Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2025-10-14T10:00:28.241Z][INFO] config:project:get-registries --> 200 (4 ms)
+[2025-10-14T10:03:02.738Z][INFO] packages:get-packageinfo <-- Request received
+params: {
+  "packageId": "com.unity.collab-proxy"
+}
+[2025-10-14T10:03:03.037Z][INFO] packages:get-packageinfo --> 200 (299 ms)
+[2025-10-14T10:03:37.361Z][INFO] Received shutdown request (SIGINT), shutting down Unity Package Manager

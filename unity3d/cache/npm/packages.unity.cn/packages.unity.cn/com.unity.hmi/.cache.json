@@ -1,0 +1,76 @@
+{
+  "dist-tags": {
+    "latest": "1.0.0-preview.2"
+  },
+  "versions": {
+    "1.0.0-preview.2": {
+      "name": "com.unity.hmi",
+      "version": "1.0.0-preview.2",
+      "displayName": "HMI Toolkit",
+      "description": "HMI Toolkit allows you to build HMI demos using Unity",
+      "category": "",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.uiwidgets": "2.0.4-preview.1"
+      },
+      "unity": "2019.4",
+      "repository": {
+        "url": "git+ssh://git@github.com/Unity-Technologies/com.unity.hmi.git",
+        "type": "git",
+        "revision": "2cd9c061f622c782feb6d555efb647f72854326a"
+      },
+      "upmCi": {
+        "footprint": "e15dfee3a615be7db85dbbec2ccb3599d4855b79"
+      },
+      "readmeFilename": "README.md",
+      "bugs": {
+        "url": "https://github.com/Unity-Technologies/com.unity.hmi/issues"
+      },
+      "homepage": "https://github.com/Unity-Technologies/com.unity.hmi#readme",
+      "_id": "com.unity.hmi@1.0.0-preview.2",
+      "_integrity": "sha512-/xbJ79BM7fAbd1BRlDXnUShOuEgfsYNAJEU8wLMrnxyuN0QhqBfKgubBClC00lE/DV/FGErQ5TDPYyypFiCURw==",
+      "_resolved": "/Users/xingweizhu/WorkSpace/UnityApps/UIWidget/latest/com.unity.hmi/upm-ci~/packages/com.unity.hmi-1.0.0-preview.2.tgz",
+      "_from": "file:upm-ci~/packages/com.unity.hmi-1.0.0-preview.2.tgz",
+      "dist": {
+        "shasum": "68388cbdfaae1a15c9912e79b3a6e1def4ef77d1",
+        "tarball": "https://download-packages.unity.cn/com.unity.hmi/-/com.unity.hmi-1.0.0-preview.2.tgz"
+      }
+    },
+    "1.0.0-preview.1": {
+      "name": "com.unity.hmi",
+      "version": "1.0.0-preview.1",
+      "displayName": "HMI Toolkit",
+      "description": "HMI Toolkit allows you to build HMI demos using Unity",
+      "category": "",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.uiwidgets": "2.0.4-preview.1"
+      },
+      "unity": "2019.4",
+      "upmCi": {
+        "footprint": "6bef42dcbe29724b1e2906b2c50d1245b2a21185"
+      },
+      "_id": "com.unity.hmi@1.0.0-preview.1",
+      "_integrity": "sha512-tc8wlIkC1QOhLsCrhTsgEzZ5RH8XNwXpOoJrzzlUmzGaiuKNMAde8g58IsETzsGBCyYojbghYWSVHKo1WReqIg==",
+      "_resolved": "/Users/xingweizhu/WorkSpace/UnityApps/UIWidget/temp/TestDLL2/Packages/com.unity.hmi/upm-ci~/packages/com.unity.hmi-1.0.0-preview.1.tgz",
+      "_from": "file:upm-ci~/packages/com.unity.hmi-1.0.0-preview.1.tgz",
+      "dist": {
+        "shasum": "b6184d5ce796ea5b63edc1b0aaf7d77ad69c5371",
+        "tarball": "https://download-packages.unity.cn/com.unity.hmi/-/com.unity.hmi-1.0.0-preview.1.tgz"
+      }
+    }
+  },
+  "etag": "\"75065e86d27fbe1af22c7c3c58173553\"",
+  "provider": "upm",
+  "name": "com.unity.hmi",
+  "description": "HMI Toolkit allows you to build HMI demos using Unity",
+  "category": "",
+  "_id": "com.unity.hmi",
+  "cnTags": [
+    "featured"
+  ],
+  "time": {
+    "1.0.0-preview.2": "2022-05-26T07:17:27Z",
+    "1.0.0-preview.1": "2022-05-13T06:25:19Z"
+  }
+}

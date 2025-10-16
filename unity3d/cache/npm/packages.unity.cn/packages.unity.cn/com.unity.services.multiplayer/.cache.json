@@ -1,0 +1,952 @@
+{
+  "dist-tags": {
+    "latest": "1.1.8"
+  },
+  "versions": {
+    "1.1.8": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.8",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "34def56704ad0a5fe3e7ec2c421f070f2a5bff1e",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.8.tgz"
+      },
+      "_upm": {
+        "changelog": "### Fixed\n- Resolved an issue where a rule without a reference could not be deployed",
+        "gameService": {}
+      }
+    },
+    "1.1.7": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.7",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "3e6e4d8cc5887e22ea3abbec1f559720b85eefde",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.7.tgz"
+      },
+      "_upm": {
+        "changelog": "### Changed\n- The user-provided allocation callback is now guaranteed to be invoked regardless of whether the session is created successfully.\n  - If session creation fails, the `OnAllocate` callback will still be invoked. This means you must check whether the Session is null before using it. The deallocation callback will be invoked once the server times out.\n- The user-provided deallocation callback is now guaranteed to be invoked.\n\n### Fixed\n- Resolved an issue where the server, upon failing to create a session, would be left in a broken state.",
+        "gameService": {}
+      }
+    },
+    "1.2.0-pre.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.2.0-pre.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.15.1",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.5.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.5.1"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.2/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "fc7e134c7ea851f6790a0080fcb5de5ec4eaa442",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.2.0-pre.1.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added support for Host Migration in lobbies:\n  - Added migration operations `GetMigrationDataInfoAsync`, `DownloadMigrationDataAsync` and `UploadMigrationDataAsync`.\n- Added support for Host Migration in sessions:\n  - Added `WithHostMigration` session option to enable automatic netcode snapshots at a configurable interval.\n    - It requires an implementation of `IMigrationDataHandler` which defines how data is generated and applied.\n    - We provide a default migration data handler implementation for Netcode with Entities (Minimum required version 1.7.0)\n  - Added migration data methods to `IHostSession`: `GetHostMigrationDataAsync` and `SetHostMigrationDataAsync` for manual implementations.\n  - Added host migration flow to restart the network on session host changed\n  - Added `SessionHostChanged` and `SessionMigrated` event on `ISession`.\n  - Added optional parameter `preserveRegion` to `RelayOptions` to configure relay reallocation behavior during host migration. Setting this to true saves the region of the first relay allocation and reuses when a relay server is reallocated during host migration.\n- Adding concurrency control settings to the lobby service and to sessions. When enabled, a [If-Match](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/If-Match) header will be sent and an exception will now be thrown in case of conflict for the following operations:\n  - deleting a lobby or session \n  - removing a player from a lobby or session\n  - updating a lobby or session player\n  - updating a lobby or session\n- Added `SessionObserver` class that allows to listen to `ISession` lifecycle for a specific `ISession.Type`.\n- Added `AddingSessionStarted` and `AddingSessionFailed` events inside `IMultiplayerService`.\n- Added overloads for `WithRelayNetwork` and `WithDistributedAuthorityNetwork` to enable manual setting of the underlying network protocol. Defaults left as before: Most platforms keep using DTLS as a default connection and WebGL still defaults to WSS. Use the `RelayNetworkOptions` variant to override the default behavior.\n- Added a `WithDirectNetwork` overload that accepts `DirectNetworkOptions` which takes `ListenIpAddress` and `PublishIpAddress` parameters.\n- Added a `WithDirectNetwork` overload that accepts no arguments, ensuring backward compatibility with the previous `WithDirectNetwork` overload.\n- Added player name integration into multiplayer sessions\n  - `WithPlayerName()` session option for a player to provide their name into a multiplayer session.\n  - `GetPlayerName()` extension method to the session `IReadOnlyPlayer` model to retrieve a player's name.\n- Added `IsServer` property in `ISession` to validate if the local owner of the session handle is a server managing the session.\n- Added `HasPlayer` method in `ISession` to easily validate if a player is in a session.\n- Added `GetPlayer` methods in `ISession` & `IHostSesssion` to easily access a specific player model by player id.\n- The default network handler implementation for netcode for entities will now automatically create client & server worlds if none are available when starting a network connection.\n- Added an Inspector for Matchmaker queue files to allow the edition of the most common properties of the Matchmaker Queue configuration in the editor.\n- Added `Network` property  to provide control over the network managed by the Session. \n  - `IHostSession` provides the `IHostSessionNetwork` interface which lets you control the network connection for the session.\n  - `ISession` provides the `IClientSessionNetwork` interface which lets you access the network state and relevant events.\n  - Come in and out of games within the same multiplayer session.\n  - Wait for specific conditions before starting the network connection and your gameplay\n    - Session reaching max players\n    - All players marking themselves as ready through player properties\n    - Etc.\n- Added `Network` property on `ISession` (`IClientSessionNetwork`) & `IHostSession` (`IHostSessionNetwork`) to provide control over the network managed by the Session. Th",
+        "gameService": {}
+      }
+    },
+    "1.1.6": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.6",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "403a0e64f139d6da433930909191628e38c3b88a",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.6.tgz"
+      },
+      "_upm": {
+        "changelog": "### Fixed\n- Resolved an issue where a host could not rejoin the same session after leaving while using Distributed Authority.",
+        "gameService": {}
+      }
+    },
+    "1.1.5": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.5",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "dc9574e25bac263891dcb94c3034a270ac6d4898",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.5.tgz"
+      },
+      "_upm": {
+        "changelog": "### Fixed\n- Fixed an internal task scheduling issue that caused Session Create and Join operations to hang indefinitely on WebGL.",
+        "gameService": {}
+      }
+    },
+    "1.1.4": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.4",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.5.0",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.4.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "1719b68380e6b0284d55e89a508ce55bd307711d",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.4.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added access to session properties on query results.\n- Added host id to session network.\n- Added better error message for a GUID collision edge case for Multiplay hosted sessions.\n\n### Fixed\n- Fixed first time Matchmaker queue file deployment that would leave the Matchmaker disabled if no Matchmaker Environment file was deployed along the queue files.\n- Fixed the potential for an awaited successful session creation getting interrupted by an exception thrown from a registered event handler.\n- Fixed the network connection attempting to parse an IP address as IPV6 on platforms where IPV6 is not supported.",
+        "gameService": {}
+      }
+    },
+    "1.1.3": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.3",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "e9296dd42336115e4f4578fc7567d0a21bf7105b",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.3.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added session refresh after subscription to events\n\n### Fixed\n- Fixed DGS not properly deleting the lobby when it leaves it or stops.\n- Fixed inability to catch exception in the Matchmaker process if thrown after the match was found.\n- Fixed lobby heartbeat start on host changed.\n- Fixed `ArgumentNullException` being thrown when selecting specific `Deployment` files in the Project Window.\n- Fixed inconsistent session changed events.",
+        "gameService": {}
+      }
+    },
+    "1.2.0-exp.4": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.2.0-exp.4",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.2/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "40a4f213d119ac93a210b701e42a094a1c25585d",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.2.0-exp.4.tgz"
+      },
+      "_upm": {
+        "changelog": "### Changed\n- Soft dependency to the Services Deployment Api in the QuickStart was changed from `com.unity.deployment.api@1.1.0` to `com.unity.deployment@1.4.1`.\n\n### Fixed\n- Creating a new Matchmaker Queue from the QuickStart menu doesn't log a path warning issue anymore.\n- Fixed first time Matchmaker queue file deployment that would leave the Matchmaker disabled if no Matchmaker Environment file was deployed along the queue files.",
+        "gameService": {}
+      }
+    },
+    "1.2.0-exp.3": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.2.0-exp.3",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.2/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "438b08d04795bebc5802d781ffe280b0054f13de",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.2.0-exp.3.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added Matchmaker Onboarding Section and presets for Multiplayer Center",
+        "gameService": {}
+      }
+    },
+    "1.1.2": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.2",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "124598b145d40dc15b98a7f3e82128971b821c85",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.2.tgz"
+      },
+      "_upm": {
+        "changelog": "### Fixed\n- Calling `SubscribeToLobbyEventsAsync` multiple times on the same lobby no longer throws exception.",
+        "gameService": {}
+      }
+    },
+    "1.1.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "888db1d8279d6e0be7eeff73b98ed475c72a7dd5",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.1.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added migration path validation to warn users when they are using incompatible packages namely the lobby, matchmaker, multiplay and relay standalone SDK.\n\n### Changed\n- Increased Lobby max player count to 150.\n- Removing a player that is not in the lobby no longer throws a `LobbyServiceException`, instead it will log that the player was not found.\n- Updated error when trying to access `MultiplayService.Instance` while in the editor.\n\n### Fixed\n- Fixed lobby so it no longer throws `ArgumentException: An item with the same key has already been added`.\n- Fixed unauthorized error when trying to remove other players from a lobby, with service account authentication.",
+        "gameService": {}
+      }
+    },
+    "1.2.0-exp.2": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.2.0-exp.2",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.2/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "f2cf7508e9649e9a1cd03843ef8256635e574b08",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.2.0-exp.2.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Increased Lobby max player count to 150.\n- Added migration data methods to `LobbyHandler` and `IHostSession`.\n\n### Changed\n- Removing a player that is not in the lobby no longer throws a `LobbyServiceException`, instead it will log that the player was not found.\n\n### Fixed\n- Fixed a lobby cache corruption issue.\n- Fixed unauthorized error when trying to remove other players from a lobby, with service account authentication.",
+        "gameService": {}
+      }
+    },
+    "1.1.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.1.0",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "e7b9f7939c7c2aadbfe13da5e47dfbedb65795e3",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.1.0.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added more detail in `SessionException` message for `MatchmakerAssignmentFailed` and `MatchmakerAssignmentTimeout`, and exposed the Error property via `ToString()`.\n- Added 2 new events under ISession, `ISession.PlayerLeaving` and `ISession.PlayerHasLeft`.\n\n### Changed\n- Marked the `ISession.PlayerLeft` event as obsolete. It is getting replaced by the new `ISession.PlayerLeaving` event.\n\n### Fixed\n- Fixed the `ISession` extension method `GetMatchmakingResults` when used with MatchId Matchmaking and non-backfill Multiplay Matchmaking.\n- Deprecated the `WithBackfillingConfiguration` method and replaced it with the corrected method with the same name and the missing `playerConnectionTimeout` parameter.\n- Fixed Lobby Vivox interoperability issues around joining certain channel types or joining channels that didn't match a Lobby ID when trying only to use the Vivox SDK while the Lobby SDK was present in the project.\n- Fixed the Lobby Vivox channel validation to allow for positional 3D channels.\n- Fixed the Server Query Protocol (SQP) responses from Multiplay Hosting servers to include correct Version and Port.\n- Fixed potential issue when querying for fleet status in the Deployment Window.\n- Increased timeout when uploading files from a build.\n- Fixed Help URL links.",
+        "gameService": {}
+      }
+    },
+    "0.0.7": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.0.7",
+      "displayName": "Multiplayer",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "dependencies": {
+        "com.unity.services.core": "1.10.1",
+        "com.unity.services.wire": "1.1.8",
+        "com.unity.netcode.gameobjects": "1.5.2",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "2.6.1",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.0/manual/index.html",
+      "unity": "2021.3",
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.0.7"
+      },
+      "dist": {
+        "shasum": "5b22a8b81b0082199372200307e093417ed0d49f",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.0.7.tgz"
+      },
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "d749ed85f91591544ab412f2962ba5e0038c980f"
+      },
+      "upmCi": {
+        "footprint": "8e9a49eed86eeaf0a2ec4376c279f4980330533d"
+      },
+      "_upm": {
+        "changelog": "* Update Documentation",
+        "gameService": {}
+      }
+    },
+    "1.0.2": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.0.2",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.0/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "f1e367d3df3d8aa616b443fd592fc17228712b2c",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.0.2.tgz"
+      },
+      "_upm": {
+        "changelog": "### Fixed\n- Fixed WebGL support for Distributed Authority.",
+        "gameService": {}
+      }
+    },
+    "1.2.0-exp.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.2.0-exp.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.2/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "646a1f73db9c519f45baaf065609af4c388f637a",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.2.0-exp.1.tgz"
+      },
+      "_upm": {
+        "changelog": "### Added\n- Added Lobby migration data methods.",
+        "gameService": {}
+      }
+    },
+    "1.0.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.0.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "### Fixed\n- Fixed an issue preventing Multiplay config files proper reimport and deploy."
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.0/manual/index.html",
+      "dist": {
+        "shasum": "024f041bd23c96fa2ea2c53260c1d2e583594642",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.0.1.tgz"
+      }
+    },
+    "1.0.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.0.0",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.7",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Fix default value for session property constructor\n* Fix `SessionHandler` dropping property's index when updating them\n* Updated com.unity.services.wire to 1.2.7 to fix reconnection issues notably with lobby  \n* Matchmaker deployment windows:\n  * Fix deploying queue when remote queue has filtered pools \n  * Fix deploying queue when remote queue has no pools\n  * `defaultQoSRegionName` is now documented as required\n  * `defaultQoSRegionName` is now a valid region `North America` \n  *  `backfillEnabled` is no longer ignored\n  *  Both Queue and Environment config files now have the `$schema` doc field\n* Add QoS region selection for Distributed Authority session creation if none is passed\n* Fix Session cleanup when a player polls for Session updates and is kicked from the Session\n* Fix Session error on deleting a non existing session.\n* Added an API to query the sessions where the player has joined: `IMultiplayerService.GetJoinedSessionIdsAsync`\n* Added a way to reconnect to a session: `IMultiplayerService.ReconnectToSessionAsync`\n* Fix port randomization compatibility with Network Game Object\n* Make QoS Calculator internal\n* Added exclude paths on a game server hosting build, that support basic patterns (*, ?)\n* Fix occasional failure to fetch matchmaking results from P2P matches\n  * These are not uploaded\n* Modified the game server hosting configuration schema:\n  * server hardware settings were marked as deprecated in 'buildConfigurations'\n  * server density settings ('usageSettings') were added in 'fleets'\n* Fix matchmaking results 204 exception\n* Fix broken links in Multiplay Hosting documentation\n* Update documentation to replace Game Server Hosting with Multiplay Hosting\n* Fix error relating to `ENABLE_UCS_SERVER` scripting define to support limited server functionality via Play Mode using non-server build profile\n* Fix `TaskCanceledException` when starting a SQP server in game server hosting\n* Fix `SavePropertiesAsync` not saving session fields if properties are unchanged\n* Enhance exception messages on ClientServerBootstrap worlds checks.\n* Add validation when accessing the IMultiplaySessionManager.Session\n* Fix typo in `SessionError`\n* Change minimum required version for Netcode for GameObjects from 2.0.0-pre.3 to 2.0.0\n* Change minimum required version for Netcode for Entities from 1.3.0-pre.2 to 1.3.2\n* Set Connection metadata visibility to session property \"member\"\n* Update Distributed Authority session properties"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "1.0.0"
+      },
+      "upmCi": {
+        "footprint": "771cba0bd5cb83c7cd2b02a2cd30496fbb196333"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "cd052eb27b49ed3215afb88c34b1e7718c5c1998"
+      },
+      "dist": {
+        "shasum": "d4d6f090b8848e0106ae87882d8ee5368bf60ae5",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.0.0.tgz"
+      }
+    },
+    "1.0.0-pre.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "1.0.0-pre.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.6",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Adding the ability to update the session published port (NetworkConfiguration.UpdatePublishPort) to enable auto-port selection in network handlers.\n* Updating direct network options default values: \n  * listenIp and publishIp default to 127.0.0.1\n  * port defaults to zero\n* Updating network support in sessions for netcode for entities to version 1.3.0-pre.2.\n* Updating network support in sessions for netcode for game objects v2 to version 2.0.0-pre.1 (required for distributed authority)\n* View in Deployment Window button for GSH and Matchmaker config as code resource files, dependent on Deployment package version 1.4.0.\n* Fix issue where gsh deploy upload may fail in some cases"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "1.0.0-pre.1"
+      },
+      "upmCi": {
+        "footprint": "cfa24a363d6b51d3a3bf1f3e8a8c5d8270c421ac"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "d7ab1e5b63846a12847ea2c6bbe9ebebe7d64c33"
+      },
+      "dist": {
+        "shasum": "3174aec35b8548b739a629b4a0680407267377c3",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-1.0.0-pre.1.tgz"
+      }
+    },
+    "0.6.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.6.0",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.6",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Added apple privacy manifest\n* Restored missing API\n* Updated dependency of com.unity.services.wire to 1.2.6\n* Fixed an issue where the notification system would fail to reconnect silently.\n* Added missing documentation\n* Added missing List and Delete APIs for Build configuration and Builds"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.6.0"
+      },
+      "upmCi": {
+        "footprint": "8da883f49284fbbcdae11a4f6484aaec67246455"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.6/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "13944467d3f74f23b4459147d7d434e23de47471"
+      },
+      "dist": {
+        "shasum": "679315432eb39acc7642928478cdb5613840f3ef",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.6.0.tgz"
+      }
+    },
+    "0.5.1": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.5.1",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Added missing documentation\n* Added missing List and Delete APIs for Build configuration and Builds"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.5.1"
+      },
+      "upmCi": {
+        "footprint": "2b2a90e78cbd328be8f08399516a470891010194"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.5/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "4686de7d4a4512a06a0ca87386ccbac679f44f3a"
+      },
+      "dist": {
+        "shasum": "685f14377a674459c1d7355b86264a8b100289d8",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.5.1.tgz"
+      }
+    },
+    "0.5.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.5.0",
+      "displayName": "Multiplayer Services",
+      "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "2.2.1",
+        "com.unity.collections": "2.2.1",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Adding session matchmaking support for peer-to-peer and dedicated game servers\n* Adding multiplay server lifecycle support & server session management\n* Adding matchmaker backfilling support for server sessions\n* Adding session authorization flow for distributed authority\n* Adjusting session filters for session matchmaking and queries\n* Adding attempt to automatically leave a session when leaving the application/play mode\n* Adding session viewer editor window to help with observability\n* Added matchmaker deployment support\n* Other minor improvements to sessions"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.5.0"
+      },
+      "upmCi": {
+        "footprint": "1e4fab378245128bc9b218b85c170d926d2a6d3e"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.5/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "02f5848080abb95a11e120ce7a59e5648d74eb9d"
+      },
+      "dist": {
+        "shasum": "cd75fbf7d42ca566dc7d2c31a5828df866641734",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.5.0.tgz"
+      }
+    },
+    "0.4.2": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.4.2",
+      "displayName": "Multiplayer Services",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.1.0",
+        "com.unity.services.core": "1.12.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "1.4.1"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Updating documentation"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.4.2"
+      },
+      "upmCi": {
+        "footprint": "49bcdb427fe6a252c6af3a2cb45390d25964f584"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.4/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "104a2e09b07875710b0d10c21909774ebce7d97f"
+      },
+      "dist": {
+        "shasum": "d35083d9db1f5c00130378e42cfd7b458d866c8c",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.4.2.tgz"
+      }
+    },
+    "0.4.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.4.0",
+      "displayName": "Multiplayer Services",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.1.0",
+        "com.unity.services.core": "1.12.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "1.4.1"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Rename package from Multiplayer Services SDK to Multiplayer Services"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.4.0"
+      },
+      "upmCi": {
+        "footprint": "7bae3b5e690481cc786268018b285260fa8ddd6f"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.4/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "4dc9b1c5ec1ff1939d9cbf9a5640aefebe0d16aa"
+      },
+      "dist": {
+        "shasum": "38abb3078554d98de105e04ea7d80025a062bef5",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.4.0.tgz"
+      }
+    },
+    "0.3.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.3.0",
+      "displayName": "Multiplayer Services SDK",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.1.0",
+        "com.unity.services.core": "1.12.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "1.4.1"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Introduce support for Distributed Authority with NGO 2.0"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.3.0"
+      },
+      "upmCi": {
+        "footprint": "89b470129caa76c2a9e51ca0a9458060b4f48d15"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.3/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "6271bade54bb167922a09292c74b5e348356a0ef"
+      },
+      "dist": {
+        "shasum": "a0ff669274bc3a0f10f3e5015a2cc490e4ce42ad",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.3.0.tgz"
+      }
+    },
+    "0.2.0": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.2.0",
+      "displayName": "Multiplayer Services SDK",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "3.1.0",
+        "com.unity.services.core": "1.12.1",
+        "com.unity.services.qos": "1.3.0",
+        "com.unity.services.wire": "1.2.3",
+        "com.unity.transport": "1.4.1"
+      },
+      "unity": "2022.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Session API improvements and fixes\n  * Use session data when creating lobby\n  * Set player properties on join\n  * Abstract session host concept\n  * Remove PlayerProfile from ISession\n  * Refactor SessionInfo\n  * Add session delete API"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.2.0"
+      },
+      "upmCi": {
+        "footprint": "55dbcd20dd00fb07b26d49d8af089a5eef0bee33"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.2/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "ff6eb702535b5347c804c2aa357deeb1de2c0db9"
+      },
+      "dist": {
+        "shasum": "3270f55c2d406b9cfd06c1d89a84c6a7ebdea244",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.2.0.tgz"
+      }
+    },
+    "0.0.6": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.0.6",
+      "displayName": "Multiplayer",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.netcode.gameobjects": "1.5.2",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "2.6.1",
+        "com.unity.services.core": "1.10.1",
+        "com.unity.services.wire": "1.1.8"
+      },
+      "unity": "2021.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Update README"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.0.6"
+      },
+      "upmCi": {
+        "footprint": "14109bd1e76a374bdb4f058f1a95d1cb2ce543c8"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "e1ba5785328b33cac7dd39824b3efa971b5fdb5e"
+      },
+      "dist": {
+        "shasum": "85bb31b481cde8ce71de45c1a2acbe7a2c88405f",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.0.6.tgz"
+      }
+    },
+    "0.0.5": {
+      "name": "com.unity.services.multiplayer",
+      "version": "0.0.5",
+      "displayName": "Multiplayer",
+      "description": "Unified Multiplayer SDK. Embeds the previous SDKs for Lobby, Matchmaker, Multiplay, QoS, and Relay. Provides interoperable functionality between the embedded SDKs.",
+      "category": "",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+        "com.unity.modules.unitywebrequestaudio": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.unitywebrequestwww": "1.0.0",
+        "com.unity.netcode.gameobjects": "1.5.2",
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.services.authentication": "2.6.1",
+        "com.unity.services.core": "1.10.1",
+        "com.unity.services.wire": "1.1.8"
+      },
+      "unity": "2021.3",
+      "_upm": {
+        "gameService": {},
+        "changelog": "* Minimum supported Editor version is 2021.3\n* Update README with links to consolidated SDK documentation"
+      },
+      "relatedPackages": {
+        "com.unity.services.multiplayer.tests": "0.0.5"
+      },
+      "upmCi": {
+        "footprint": "8fcc66d8ad40e19bfc1b44403ec88171eb23acda"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@0.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "33fc26d1c8965821a64d05009ea4d0032a8c61f9"
+      },
+      "dist": {
+        "shasum": "b50f073224610530aac824a0974158176abbafe6",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.multiplayer/-/com.unity.services.multiplayer-0.0.5.tgz"
+      }
+    }
+  },
+  "etag": "\"42a296975e38dca6f1754ed4c348a6aa\"",
+  "provider": "upm",
+  "name": "com.unity.services.multiplayer",
+  "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+  "_id": "com.unity.services.multiplayer",
+  "cnTags": [],
+  "time": {
+    "1.1.8": "2025-09-12T03:19:31Z",
+    "1.1.7": "2025-09-10T03:19:31Z",
+    "1.2.0-pre.1": "2025-08-08T03:19:31Z",
+    "1.1.6": "2025-08-05T03:19:31Z",
+    "1.1.5": "2025-07-16T03:19:31Z",
+    "1.1.4": "2025-06-19T03:19:31Z",
+    "1.1.3": "2025-04-24T03:19:31Z",
+    "1.2.0-exp.4": "2025-04-11T03:19:31Z",
+    "1.2.0-exp.3": "2025-03-27T03:19:31Z",
+    "1.1.2": "2025-03-08T03:19:30Z",
+    "1.1.1": "2025-02-07T03:19:31Z",
+    "1.2.0-exp.2": "2025-01-25T03:19:30Z",
+    "1.1.0": "2024-12-31T03:19:31Z",
+    "0.0.7": "2024-12-05T08:21:57Z",
+    "1.0.2": "2024-12-05T08:21:55Z",
+    "1.2.0-exp.1": "2024-12-05T08:21:51Z",
+    "1.0.1": "2024-10-22T21:20:11Z",
+    "1.0.0": "2024-09-24T19:48:34Z",
+    "1.0.0-pre.1": "2024-07-24T11:08:40Z",
+    "0.6.0": "2024-07-11T08:17:22Z",
+    "0.5.1": "2024-07-04T05:33:48Z",
+    "0.5.0": "2024-07-02T16:15:29Z",
+    "0.4.2": "2024-06-04T09:19:05Z",
+    "0.4.0": "2024-04-24T14:26:55Z",
+    "0.3.0": "2024-04-11T09:55:53Z",
+    "0.2.0": "2024-03-27T13:20:13Z",
+    "0.0.6": "2023-08-22T15:28:58Z",
+    "0.0.5": "2023-08-17T08:33:27Z"
+  }
+}

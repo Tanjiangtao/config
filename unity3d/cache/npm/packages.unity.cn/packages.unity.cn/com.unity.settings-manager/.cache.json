@@ -1,0 +1,308 @@
+{
+  "dist-tags": {
+    "latest": "2.1.1"
+  },
+  "versions": {
+    "2.1.1": {
+      "name": "com.unity.settings-manager",
+      "version": "2.1.1",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "0b8638c5ce86009d785da17b17aaf629047f64ce",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-2.1.1.tgz"
+      },
+      "samples": [
+        {
+          "path": "Samples~",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "displayName": "User Settings Example"
+        }
+      ],
+      "_upm": {
+        "changelog": "### Changes\n\n- Enable Auto Reference on main assembly.\n\n### Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify that context menu items are relevant only to the selected category."
+      }
+    },
+    "2.1.0": {
+      "name": "com.unity.settings-manager",
+      "version": "2.1.0",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html",
+      "unity": "2022.3",
+      "dist": {
+        "shasum": "41738c27519039c335849eb78949382f4d7a3544",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-2.1.0.tgz"
+      },
+      "samples": [
+        {
+          "path": "Samples~",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "displayName": "User Settings Example"
+        }
+      ],
+      "_upm": {
+        "changelog": "### Changes\n\n- Enable Auto Reference on main assembly.\n\n### Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify that context menu items are relevant only to the selected category."
+      }
+    },
+    "2.0.1": {
+      "name": "com.unity.settings-manager",
+      "version": "2.0.1",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "category": "",
+      "unity": "2018.4",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ],
+      "hideInEditor": true,
+      "upmCi": {
+        "footprint": "218062301476a2cebb1d6d5e7a74f9a45634ef7f"
+      },
+      "repository": {
+        "url": "https://github.com/Unity-Technologies/com.unity.settings-manager.git",
+        "type": "git",
+        "revision": "9b7c12d04ef880168151c127fd6b37b5931197dc"
+      },
+      "_id": "com.unity.settings-manager@2.0.1",
+      "_integrity": "sha512-YnOUI+2SuuBUtXdTiSvSrVpOaiyiKEdX9OERX/h8IgGy7bezSgN7oMkNI8gLNhm+z0T1N5fSLCgiBvbaH1hcGg==",
+      "_resolved": "/pkgprom/com.unity.settings-manager-2.0.1.tgz",
+      "_from": "file:com.unity.settings-manager-2.0.1.tgz",
+      "dist": {
+        "shasum": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-2.0.1.tgz"
+      }
+    },
+    "2.0.0": {
+      "name": "com.unity.settings-manager",
+      "version": "2.0.0",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "category": "",
+      "unity": "2018.4",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ],
+      "hideInEditor": true,
+      "upmCi": {
+        "footprint": "d3f56be270bf9ae3ffd1ea1136e0d6cb19e29b4e"
+      },
+      "repository": {
+        "url": "https://github.com/Unity-Technologies/com.unity.settings-manager.git",
+        "type": "git",
+        "revision": "e9a4705329f58ee2b36ab7297ba8b5137a852760"
+      },
+      "_id": "com.unity.settings-manager@2.0.0",
+      "_integrity": "sha512-J/XnwnPC6BjkGuvzOOMn/oPneQZSfRUJdppVxn2Plw9m2a19NthaDK3nMIhAYUiH11nEUhNuI5kIJe46EfaVxw==",
+      "_resolved": "/pkgprom/com.unity.settings-manager-2.0.0.tgz",
+      "_from": "file:com.unity.settings-manager-2.0.0.tgz",
+      "dist": {
+        "shasum": "2eb8dbd941552dcc0f4ebbc9d772eb5615f084f9",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-2.0.0.tgz"
+      }
+    },
+    "1.0.3": {
+      "name": "com.unity.settings-manager",
+      "version": "1.0.3",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "category": "",
+      "unity": "2018.3",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ],
+      "hideInEditor": true,
+      "upmCi": {
+        "footprint": "8626270bc9561a33f85ba977df88266621679de6"
+      },
+      "repository": {
+        "url": "git+https://github.com/Unity-Technologies/com.unity.settings-manager.git",
+        "type": "git",
+        "revision": "473664ccba1496294b741cf169740a5d54b3d0b6"
+      },
+      "readmeFilename": "README.md",
+      "bugs": {
+        "url": "https://github.com/Unity-Technologies/com.unity.settings-manager/issues"
+      },
+      "homepage": "https://github.com/Unity-Technologies/com.unity.settings-manager#readme",
+      "_id": "com.unity.settings-manager@1.0.3",
+      "dist": {
+        "shasum": "59cbe0e443a51c5752c74323dcae91119bac1ba6",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-1.0.3.tgz"
+      }
+    },
+    "1.0.2": {
+      "name": "com.unity.settings-manager",
+      "version": "1.0.2",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "unity": "2018.3",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ],
+      "hideInEditor": true,
+      "repository": {
+        "footprint": "d4e654a69bb413c96bf81bf09a46685cd55b03b1",
+        "type": "git",
+        "url": "git+https://github.com/Unity-Technologies/com.unity.settings-manager.git",
+        "revision": "e8eedc87ca7850bac0f7b2257db4edb8c300a0f3"
+      },
+      "readmeFilename": "README.md",
+      "bugs": {
+        "url": "https://github.com/Unity-Technologies/com.unity.settings-manager/issues"
+      },
+      "homepage": "https://github.com/Unity-Technologies/com.unity.settings-manager#readme",
+      "_id": "com.unity.settings-manager@1.0.2",
+      "_shasum": "d2359118ea4d0f1e51a241d67404f27b9f95cc36",
+      "_resolved": "file:..\\..\\..\\..\\MIKE~1.ADK\\AppData\\Local\\Temp\\com.unity.settings-manager-1.0.2.tgz",
+      "_from": "..\\..\\..\\..\\MIKE~1.ADK\\AppData\\Local\\Temp\\com.unity.settings-manager-1.0.2.tgz",
+      "scripts": {},
+      "dist": {
+        "shasum": "d2359118ea4d0f1e51a241d67404f27b9f95cc36",
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-1.0.2.tgz"
+      }
+    },
+    "1.0.1": {
+      "name": "com.unity.settings-manager",
+      "version": "1.0.1",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:Unity-Technologies/com.unity.settings-manager.git",
+        "revision": "4e1ab5cb77b40205e6bf01d377846a851232c4e3"
+      },
+      "dist": {
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-1.0.1.tgz",
+        "shasum": "3e1c918932dd5852c5bd18aa39053b4df3d4c4de"
+      },
+      "scripts": {},
+      "_id": "com.unity.settings-manager@1.0.1",
+      "unity": "2018.3",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ]
+    },
+    "1.0.0": {
+      "name": "com.unity.settings-manager",
+      "version": "1.0.0",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:Unity-Technologies/com.unity.settings-manager.git",
+        "revision": "4ad6e8b570fe0de32e5603d583851618faf7c9ae"
+      },
+      "dist": {
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-1.0.0.tgz",
+        "shasum": "a975e66acf20958fb63cc88a774ceefb4d5f6f19"
+      },
+      "scripts": {},
+      "_id": "com.unity.settings-manager@1.0.0",
+      "unity": "2018.3",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ]
+    },
+    "0.1.0-preview.8": {
+      "name": "com.unity.settings-manager",
+      "version": "0.1.0-preview.8",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:Unity-Technologies/com.unity.settings-manager.git",
+        "revision": "3241e5358783bb3955e561f778f4bbbff57708f0"
+      },
+      "dist": {
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-0.1.0-preview.8.tgz",
+        "shasum": "09a14c5e45183fec48432158c997bbe36bee6ff7"
+      },
+      "scripts": {},
+      "_id": "com.unity.settings-manager@0.1.0-preview.8",
+      "unity": "2018.1",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ]
+    },
+    "0.1.0-preview.4": {
+      "name": "com.unity.settings-manager",
+      "version": "0.1.0-preview.4",
+      "displayName": "Settings Manager",
+      "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+      "dependencies": {},
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:Unity-Technologies/com.unity.settings-manager.git",
+        "revision": "1a247e7e746fccb061df84afd66bd79f1ee46e94"
+      },
+      "dist": {
+        "tarball": "https://download-packages.unity.cn/com.unity.settings-manager/-/com.unity.settings-manager-0.1.0-preview.4.tgz",
+        "shasum": "7c05291f18c836122e3c6e5024b2a85413aee4e2"
+      },
+      "scripts": {},
+      "_id": "com.unity.settings-manager@0.1.0-preview.4",
+      "unity": "2018.1",
+      "samples": [
+        {
+          "displayName": "User Settings Example",
+          "description": "Example code showing use of the Settings Manager attributes.",
+          "path": "Samples~"
+        }
+      ]
+    }
+  },
+  "etag": "\"33c42cb3a72512aaa9a32d8f05c85b06\"",
+  "provider": "upm",
+  "name": "com.unity.settings-manager",
+  "description": "A framework for making any serializable field a setting, complete with a pre-built settings interface.",
+  "_id": "com.unity.settings-manager",
+  "cnTags": [],
+  "time": {
+    "2.1.1": "2025-10-10T03:20:02Z",
+    "2.1.0": "2025-04-03T03:20:01Z",
+    "2.0.1": "2021-12-06T17:52:19Z",
+    "2.0.0": "2021-11-03T14:14:16Z",
+    "1.0.3": "2020-07-10T20:27:10Z",
+    "1.0.2": "2020-03-02T17:32:16Z",
+    "1.0.1": "2019-12-10T18:07:08Z",
+    "1.0.0": "2019-06-18T14:02:48Z",
+    "0.1.0-preview.8": "2019-04-16T18:02:12Z",
+    "0.1.0-preview.4": "2019-04-03T12:23:06Z"
+  }
+}

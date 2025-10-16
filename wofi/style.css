@@ -1,0 +1,93 @@
+/* 引入 pywal 配色（确保已运行 wal -i 壁纸路径 生成该文件） */
+@import url('/home/tantao/.cache/wal/colors-waybar.css');
+
+/* 定义自定义颜色（使用 pywal 变量，若变量不存在则 fallback 到默认色） */
+@define-color mauve @color9;
+@define-color red @color9;
+@define-color lavender @color7;
+@define-color text @color7;
+@define-color background @color0; /* pywal 中背景色通常为 @color0 */
+
+/* 动画（当前为空，可保留用于未来扩展） */
+@keyframes fadeIn {
+    0% {}
+    100% {}
+}
+
+* {
+    all: unset;
+    font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    background-color: transparent;
+}
+
+window {
+    all: unset;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: alpha(@background, 0.5); /* 使用 pywal 背景色变量 */
+}
+
+#inner-box {
+    margin: 2px;
+    padding: 5px; /* 修复：添加分号 */
+    border: none;
+}
+
+#outer-box {
+    border: none;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+}
+
+#input {
+    all: unset;
+    margin: 20px 20px 0; /* 合并 margin 写法，更简洁 */
+    padding: 20px;
+    color: @text;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* 修复：添加单位 px */
+    background-color: alpha(@background, 0.2);
+}
+
+#input image {
+    color: @red;
+    padding-right: 10px;
+}
+
+#input:focus {
+    border-radius: 10px; /* 修复：添加单位 px */
+}
+
+#text {
+    margin: 5px;
+    color: @text;
+}
+
+#entry {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+}
+
+#entry arrow {
+    color: @lavender;
+}
+
+#entry:selected {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#entry:selected #text {
+    color: @mauve;
+}
+

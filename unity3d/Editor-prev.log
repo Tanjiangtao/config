@@ -1,0 +1,36 @@
+Unity Editor version:    2022.3.62f2c1 (92e6e6be66dc)
+Branch:                  2022.3/china_unity/release
+Build type:              Release
+Batch mode:              NO
+System name:             Linux
+Distro version:          #1 SMP PREEMPT_DYNAMIC Mon, 06 Oct 2025 18:48:29 +0000
+Kernel version:          6.17.1-arch1-1
+Architecture:            x86_64
+Window Protocol:         Wayland (XWayland)
+Available memory:        31860 MB
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tantao" at "2025-10-14T09:56:28.623129Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.1+ae67fbc
+  Session Id:              87569cc425134195948e67032d4434fd
+  Correlation Id:          1b4d6e94669993c3867993b4a3583f50
+  External correlation Id: 749933671959166954
+  Machine Id:              O0Fncc6uECEBDrJIA4GSc3iuebw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-tantao" (connect: 0.00s, validation: 0.01s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tantao-notifications" at "2025-10-14T09:56:28.633824Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Pro License: NO
+
+(Unity:94725): Gtk-CRITICAL **: 17:56:29.129: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+
+(Unity:94725): GLib-GObject-CRITICAL **: 17:56:29.129: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Desktop is 5547 x 2160 @ 60 Hz
+Initialize udev device monitor.
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+/home/tantao/Unity/Hub/Editor/2022.3.62f2/Editor/Unity

@@ -1,0 +1,410 @@
+{
+  "dist-tags": {
+    "latest": "1.0.13"
+  },
+  "versions": {
+    "1.0.13": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.13",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.13",
+      "_integrity": "sha512-dxYMads4LPNwieonFZGAqy7fOnD28SRwdQtF5PMopDds4OOoToNl+Vkcr/Bb9Q60dIAi67yFnvnV/3WfcwiMPg==",
+      "dist": {
+        "shasum": "0b80a32a960dd173b4849dcbe9aea0d1b59feac5",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.13.tgz"
+      }
+    },
+    "1.0.12": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.12",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.12",
+      "_integrity": "sha512-ImcC3cPIicunLMPcvSk+kBDKI4KSRKSDqNyYlWwKY5E3ZCUMl4yzDZCkDiStf68rOK5zxYcE9U9gy9xuvyShSg==",
+      "dist": {
+        "shasum": "9601e84e3964666da9e98422c9480bdbd5f662e4",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.12.tgz"
+      }
+    },
+    "1.0.11": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.11",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.11",
+      "_integrity": "sha512-r0oKjJB/04B+RUi5ih0d8DuO40AP6uBSwzQoiIOEUkNDIOrqLZJYXTqCyfmy/1zSos46UswLjaecG16LPSV/lw==",
+      "dist": {
+        "shasum": "2fa0dac4d73375b93ff709400074c5263561c86b",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.11.tgz"
+      }
+    },
+    "1.0.10": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.10",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.10",
+      "_integrity": "sha512-vhPIJB5reZyFnqF2FT+MlQXRsmZJPaACv9pzlO9nej/eSIDyz3BeFKnL7CFIPkChEYGbpm/qFO0k8iZjEW4K7g==",
+      "dist": {
+        "shasum": "f182cd30518d18890b3400023da069e237dd8aca",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.10.tgz"
+      }
+    },
+    "1.0.9": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.9",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.9",
+      "_integrity": "sha512-NlUJ27q/y9nz96W668JoWd/NGQo6DlWgqzVXx9zKwHcgBqmTGBxXSmPqZng3Oj0h2QVjuhaKvXvEVI6A6dmtyw==",
+      "dist": {
+        "shasum": "1daab065e8a176dec41a22226bb5a612a31501c6",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.9.tgz"
+      }
+    },
+    "1.0.8": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.8",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.8",
+      "_integrity": "sha512-CeaOhr8nK8xlZoSani1rsEZ4035AZ1DZL4Rr4PW1GECkw+N5wbE98yjrbhLt3QKXBYGjpCHliak48GkAHkjWZg==",
+      "dist": {
+        "shasum": "013259aa89656b9cdd6747550638bbd0f039d4be",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.8.tgz"
+      }
+    },
+    "1.0.7": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.7",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.7",
+      "_integrity": "sha512-fp6dBlDb0tmLfQ1FuQquHb660OADxm5lyN7pnxHI3J/XO6SWAxU3KQnF2lyH0WsFOqMH6tIuf+KMj21lXXIi2A==",
+      "dist": {
+        "shasum": "94fd46dbec87bacdcf842960e9fd4ff68af05d9b",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.7.tgz"
+      }
+    },
+    "1.0.6": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.6",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.6",
+      "_integrity": "sha512-lj+wHKVjjq/7xEPze7ctWpJGghj1G9qH8IYTeOqWi0vXJiTlHnr57GFUeSAzSfIhHIKGn8qsxp+zsXQtDDm0zQ==",
+      "dist": {
+        "shasum": "ba3f8e27ca21ebe831f81136fcd2e16b973f02c7",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.6.tgz"
+      }
+    },
+    "1.0.5": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.5",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.5",
+      "_integrity": "sha512-OD/OhylJIcQFtbxlf+cGU+GE07/LVlJ8dEiQ7sEpZhKTZznEKRNdioF51frJYWqxMHZI2FDLF6DMrBUzkSIRKQ==",
+      "dist": {
+        "shasum": "15b2b6a975a110cf5d03728fc4fd51df844bc1c2",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.5.tgz"
+      }
+    },
+    "1.0.4": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.4",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.4",
+      "_integrity": "sha512-MCZucTv/NGd5DYvDzabytWRbsE8rnNU6p+nn925rNp0kEWPj1NnQNVRJXO98jbmB+rAu512TaclDbhd7j657Rw==",
+      "dist": {
+        "shasum": "94c1ebe7628b3d1f5ca9234cb1a30561f0488697",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.4.tgz"
+      }
+    },
+    "1.0.3": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.3",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.3",
+      "_integrity": "sha512-hMSCrVUnZHKmssrnbiNkE3/L2mWGCXRBv6nGTvmGf10vC4YTKG07yWABv//+ITvDxe1kFyoStlMJVywl7zGjvQ==",
+      "dist": {
+        "shasum": "13855f913a9d8e387ea71067b3c2d6c31081ec01",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.3.tgz"
+      }
+    },
+    "1.0.2": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.2",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.2",
+      "_integrity": "sha512-3HEKaCq8x2iM0gPpmqxyqoXqsPrZmQxQr2e0TPmQnkywYrD56hvJSnXnP+Ilvxvb99AydeYLb3ybkXdSCcXxOA==",
+      "dist": {
+        "shasum": "0f6d83da83f18fe59344d86300c659a971e1b71f",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.2.tgz"
+      }
+    },
+    "1.0.1": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.1",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "_id": "cn.tuanjie.minihost@1.0.1",
+      "_integrity": "sha512-DYXvmaO9CnJMKwzUusUfPnqGYPRyB+tT5OqYK54xao94fMMwA6Fe8UEH0jhgFIUUCM6Mt0LdYU9jSdcRt4ThDA==",
+      "dist": {
+        "shasum": "67ac2ff7415dcbbbf4068e953e306062baecb7fe",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.1.tgz"
+      }
+    },
+    "1.0.0": {
+      "name": "cn.tuanjie.minihost",
+      "version": "1.0.0",
+      "displayName": "Unity Mini Host Tool",
+      "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+      "keywords": [
+        "Tuanjie",
+        "WeixinMiniGame",
+        "Unity"
+      ],
+      "category": "minigame",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "author": {
+        "name": "You San Di Technology",
+        "url": "Shanghai"
+      },
+      "unity": "2019.4",
+      "readmeFilename": "README.md",
+      "gitHead": "fd7d6847914e1ff09fc0f8301aecbb5b9c06f64a",
+      "_id": "cn.tuanjie.minihost@1.0.0",
+      "dist": {
+        "shasum": "99d2d853c11db538dcebad50b3504b5ddc2a133f",
+        "tarball": "https://download-packages.unity.cn/cn.tuanjie.minihost/-/cn.tuanjie.minihost-1.0.0.tgz"
+      }
+    }
+  },
+  "etag": "\"807a7f883117ff0eb00ef7cea7049c90\"",
+  "provider": "upm",
+  "name": "cn.tuanjie.minihost",
+  "description": "Unity 小游戏宿主插件使得开发者可以上传自己构建好的游戏到宿主后台服务器，并通过Connect App扫码体验。",
+  "category": "minigame",
+  "_id": "cn.tuanjie.minihost",
+  "cnTags": [
+    "featured"
+  ],
+  "time": {
+    "1.0.13": "2025-10-13T08:13:06Z",
+    "1.0.12": "2025-09-25T07:49:37Z",
+    "1.0.11": "2025-09-16T10:56:12Z",
+    "1.0.10": "2025-09-16T03:39:05Z",
+    "1.0.9": "2025-08-27T08:41:07Z",
+    "1.0.8": "2025-08-13T03:41:32Z",
+    "1.0.7": "2025-07-08T06:55:18Z",
+    "1.0.6": "2025-07-08T01:27:17Z",
+    "1.0.5": "2025-06-27T08:52:02Z",
+    "1.0.4": "2025-06-20T06:45:01Z",
+    "1.0.3": "2025-06-16T08:41:10Z",
+    "1.0.2": "2025-05-19T05:32:12Z",
+    "1.0.1": "2025-05-12T05:05:53Z",
+    "1.0.0": "2025-04-18T06:23:43Z"
+  }
+}

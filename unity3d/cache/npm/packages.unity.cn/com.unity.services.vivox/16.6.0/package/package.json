@@ -1,0 +1,55 @@
+{
+  "name": "com.unity.services.vivox",
+  "displayName": "Vivox",
+  "version": "16.6.0",
+  "vivox_core_version": "5.26.0",
+  "unity": "2020.3",
+  "_upm": {
+    "gameService": {
+      "groupIndex": 2,
+      "groupName": "Multiplayer",
+      "genericDashboardUrl": "https://dashboard.unity3d.com/vivox",
+      "projectDashboardUrl": "https://dashboard.unity3d.com/organizations/{0}/projects/{1}/vivox/credentials",
+      "projectDashboardUrlType": "OrganizationKeyAndProjectGuid",
+      "configurePath": "Project/Services/Vivox"
+    },
+    "supportedPlatforms": [
+      "Android",
+      "iOS",
+      "mac",
+      "Windows"
+    ],
+    "changelog": "### Changed\n- The licenses and third party notices have been updated.\n- Vivox Acoustic Echo Cancellation and Automatic Gain Control have had their underlying algorithms replaced.\n    - Acoustic Echo Cancellation on mobile platforms no longer mutes the microphone signal when echo is detected. Instead, echo is removed and speech continues to transmit.\n    - Automatic Gain Control is on by default. The new Automatic Gain Control increases microphone capture loudness on all platforms. Consider adjusting application volume presets if they were changed from the default volumes; perhaps going so far as to reset user volume settings entirely or to adjust them by some formula.\n    - For platforms that already had Acoustic Echo Cancellation and Automatic Gain Control, the new implementation including the addition of Noise Suppression has:\n        - The same or less CPU cost than the previous implementation when using the Release configuration.\n        - A reduction in memory usage of about 11 MB while a voice session is active.\n    - For platforms that are getting Acoustic Echo Cancellation and Automatic Gain Control for the first time:\n        - CPU cost of the Vivox audio thread increases by about 44% when using the Release configuration.\n        - An extra 6 MB of memory will be used while a voice session is active.\n    - Vivox library sizes have increased for all platforms due to the change in audio processing implementations:\n        - Release configuration libraries add between 53 KB and 8 MB more to an application than the previous Vivox release.\n        - Debug configuration libraries can add upwards of 12 MB more to an application than the previous Vivox release.\n- Network optimization: A new default voice codec bitrate was chosen to reduce packet loss and jitter. The new setting was found to be indistinguishable from the previous setting in structured listening tests.\n- `iOS`:\n    - The `VivoxConfigurationOptions.IosVoiceProcessingMode` value now defaults to 1 rather than 2, meaning that the VoiceProcessingIO (VPIO) unit will only be used when the speakerphone is used for render and capture. This change favors the use of the new Acoustic Echo Cancellation underlying algorithms rather than the use of the VPIO unit to avoid the decrease in quality for most audio device configurations that come from using the VPIO unit.\n### Added\n- Noise suppression: Now applied to capture audio by default. To change the settings, see the new `IVivoxGlobalAudioSettings` APIs.\n- Vivox Acoustic Echo Cancellation and Automatic Gain Control are now available on all platforms. Acoustic Echo Cancellation and Automatic Gain Control were previously unavailable on Nintendo Switch™, PlayStation®, Xbox, visionOS, and UWP platforms.\n- New `IVivoxGlobalAudioSettings` interface providing centralized control over Vivox audio processing features accessible through `VivoxService.Instance.VivoxGlobalAudioSettings`:\n  - Noise suppression controls:\n    - `NoiseSuppressionEnabled` to toggle background noise reduction\n  - Echo cancellation settings:\n    - `PlatformAcousticEchoCancellationEnabled` for mobile platform-native Acoustic Echo Cancellation\n    - `VivoxAcousticEchoCancellationEnabled` for SDK-level Acoustic Echo Cancellation\n  - Audio processing features:\n    - `AutomaticGainControlEnabled` for input volume normalization\n    - `DynamicVoiceProcessingSwitchingEnabled` for adaptive processing\n    - `VolumeBasedDuplicationSuppressionEnabled` for multi-channel audio management\n    - `PositionalChannelVolumeProtectionEnabled` for 3D audio distortion prevention\n  - Clipping protection controls:\n    - `AudioClippingProtectorEnabled` to toggle clipping prevention\n    - `AudioClippingProtectorParameters` to fine-tune protection behavior\n### Fixed\n- Fixed a bug where adjusting timeScale could prevent events from firing.\n- Fixed an issue where creating an Android build with `Player Settings > Android settings > Publishing Settings > Minify` enabled would result in runtime errors.\n- Vivox log levels were off-by-one. There may be more Vivox log statements now if the"
+  },
+  "description": "Unity's voice and text chat service for multiplayer communication offers voice chat and direct message text service with a managed hosted solution. Plug into your game and configure your project settings to add communications to your project immediately. Connect an unlimited number of users in 2D and 3D channels. Monitor concurrency on your dashboard. Add a custom UI to allow players to control voice volume, mute, and add audio effects to voice channels and manage them. Place users in team chat and allow them to participate in multiple channels.",
+  "dependencies": {
+    "com.unity.settings-manager": "1.0.3",
+    "com.unity.services.core": "1.12.5",
+    "com.unity.nuget.newtonsoft-json": "3.0.2",
+    "com.unity.modules.audio": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Chat Channel Sample",
+      "description": "This sample showcases voice chat, text chat, text-to-speech, muting, and chat history features for immersive, interactive user engagement.",
+      "path": "Samples~/ChatChannelSample"
+    },
+    {
+      "displayName": "Text Chat Sample",
+      "description": "This text-focused sample showcases a robust chat experience that demonstrates sending, editing, and deleting DM or channel messages along with retrieving past conversations and their message history.",
+      "path": "Samples~/TextSample"
+    }
+  ],
+  "relatedPackages": {
+    "com.unity.services.vivox.tests": "16.6.0"
+  },
+  "upmCi": {
+    "footprint": "3a85ea06b321fa547a578d08f6046f5435ddc55f"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.vivox@16.6/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/vivox-unity-sdk.git",
+    "type": "git",
+    "revision": "1c4a4849b938f966717cea9972c5e2730c8924bc"
+  }
+}

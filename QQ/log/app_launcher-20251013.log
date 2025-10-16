@@ -1,0 +1,48 @@
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] [QQEX] process.execPath00:/opt/QQ/qq
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] 不存在 /home/tantao/.config/QQ/versions/config.json，将自动创建。内容为：
+{
+  "baseVersion": "3.2.19-39038",
+  "curVersion": "3.2.19-39038",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "39038",
+  "unzipRetryCount": 0
+}
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] launcherCounts 写入成功: 1
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] /home/tantao/.config/QQ/versions/3.2.19-39038.zip 不存在，无需执行解压操作
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] use path/opt/QQ/resources/app/application.asar
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application.asar/background.js
+[199dc3f3ab8][10/13/2025, 2:25:55 PM][INFO] 
+---------- 成功的分割线 ----------
+
+
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] /home/tantao/.config/QQ/versions/config.json 存在
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] [QQEX] process.execPath00:/opt/QQ/qq
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] launcherCounts 写入成功: 2
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] /home/tantao/.config/QQ/versions/3.2.19-39038.zip 不存在，无需执行解压操作
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] use path/opt/QQ/resources/app/application.asar
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application.asar/background.js
+[199dc4478c1][10/13/2025, 2:31:38 PM][INFO] 
+---------- 成功的分割线 ----------
+
+
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] /home/tantao/.config/QQ/versions/config.json 存在
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] [QQEX] process.execPath00:/opt/QQ/qq
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] launcherCounts 写入成功: 1
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] /home/tantao/.config/QQ/versions/3.2.19-39038.zip 不存在，无需执行解压操作
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] use path/opt/QQ/resources/app/application.asar
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application.asar/background.js
+[199dc70cbd7][10/13/2025, 3:20:03 PM][INFO] 
+---------- 成功的分割线 ----------
+
+
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] /home/tantao/.config/QQ/versions/config.json 存在
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] [QQEX] process.execPath00:/opt/QQ/qq
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] launcherCounts 写入成功: 2
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] /home/tantao/.config/QQ/versions/3.2.19-39038.zip 不存在，无需执行解压操作
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] use path/opt/QQ/resources/app/application.asar
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application.asar/background.js
+[199dc822533][10/13/2025, 3:39:00 PM][INFO] 
+---------- 成功的分割线 ----------
+
+

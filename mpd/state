@@ -1,0 +1,41 @@
+sw_volume: 100
+audio_device_state:1:PipeWire Sound Server
+audio_device_state:1:Visualizer feed
+state: pause
+current: 5
+time: 111.367
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:爱要坦荡荡 - 萧萧.flac
+1:暖暖 - .flac
+2:如果的事 - 范玮琪、张韶涵.flac
+3:如愿.flac
+4:一百万个可能 - 张含韵.flac
+5:致青春 - 王菲.flac
+6:世界赠予我的 - 王菲.flac
+7:有可能的夜晚 - 曾轶可.flac
+8:异客 - 乖乖甜.mp3
+9:月上歌 - 单依纯.flac
+10:李白 - 单依纯.flac
+11:绿光 - .flac
+12:回马枪 - 张含韵&湖南省湘剧院青年演员.mp3
+13:一纸行书 - 张含韵.flac
+14:樱花草 - .flac
+15:匆匆那年 - 王菲.flac
+16:化身孤岛的鲸 - 不才.flac
+17:半句再见 - .flac
+18:陈一发儿 - 弦上有春秋.flac
+19:红豆.flac
+20:听不见的爱情 - 蔡佩轩.flac
+21:如愿.flac
+22:时间煮雨 - 郁可唯.flac
+23:归途有风 - 王菲.flac
+24:听妈妈的话 - 周杰伦.flac
+playlist_end

@@ -1,0 +1,195 @@
+{
+  "dist-tags": {
+    "latest": "1.4.0"
+  },
+  "versions": {
+    "1.4.0": {
+      "name": "com.unity.services.tooling",
+      "version": "1.4.0",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control\n- Game Overrides",
+      "dependencies": {
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.deployment": "1.6.2",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.4/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "85f0412fe4c14e70329819199adb11d8d739bbea",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.4.0.tgz"
+      },
+      "samples": [],
+      "_upm": {
+        "changelog": "### Added\n- `Delete Remote` command for Access Control assets from within the Deployment window right-click context menu \n\n### Fixed\n- Fixed assets being loaded despite being of the incorrect type",
+        "gameService": {}
+      }
+    },
+    "1.3.0": {
+      "name": "com.unity.services.tooling",
+      "version": "1.3.0",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control",
+      "dependencies": {
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.deployment": "1.4.1",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.3/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "33ec62dd14aee93fa9d46cb35c21adb92f80537e",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.3.0.tgz"
+      },
+      "samples": [],
+      "_upm": {
+        "changelog": "### Added\n- Support for Game Overrides CAC\n  - Create through **Create** > **Services** > **Game Overrides Configuration**",
+        "gameService": {}
+      }
+    },
+    "1.2.1": {
+      "name": "com.unity.services.tooling",
+      "version": "1.2.1",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control",
+      "dependencies": {
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.2/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "bbef250c482fed9bfc2a80f6b763c2c192f04bc0",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.2.1.tgz"
+      },
+      "samples": [],
+      "_upm": {
+        "changelog": "### Fixed\n- Fixed inspector loading for service assets, below Unity 6",
+        "gameService": {}
+      }
+    },
+    "1.2.0": {
+      "name": "com.unity.services.tooling",
+      "version": "1.2.0",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control",
+      "dependencies": {
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.deployment": "1.3.0",
+        "com.unity.services.authentication": "3.3.3"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.2/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "1b83bf6beaff84b702a2f1a63f4a6e3e339b8c45",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.2.0.tgz"
+      },
+      "samples": [],
+      "_upm": {
+        "changelog": "### Added\n- View in Deployment Window button for `.ac` resource files, dependent on Deployment package version 1.4.0.\n- Help URL link from Access Control Asset",
+        "gameService": {}
+      }
+    },
+    "1.1.0": {
+      "name": "com.unity.services.tooling",
+      "version": "1.1.0",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control",
+      "category": "",
+      "dependencies": {
+        "com.unity.services.authentication": "3.3.3",
+        "com.unity.services.core": "1.13.0",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2021.3",
+      "samples": [],
+      "_upm": {
+        "gameService": {},
+        "supportedPlatforms": [
+          "Android",
+          "iOS",
+          "Linux",
+          "Mac",
+          "PC",
+          "Windows 8 Universal",
+          "Windows 10 Universal"
+        ],
+        "changelog": "### Fixed\n\n- Fixed a warning about the `Unity.Services.Tooling.Editor` assembly being empty\n- Moved create Access Control configuration menu item under \"Services\""
+      },
+      "relatedPackages": {
+        "com.unity.services.tooling.tests": "1.1.0"
+      },
+      "upmCi": {
+        "footprint": "aa59692b09e654fc80b33b933ef879d76887aa59"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.1/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "5c716a44568cbc3f08079466789285d47eede953"
+      },
+      "dist": {
+        "shasum": "61eae97781b4a1f08e886c52c56be36f4c39fb5a",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.1.0.tgz"
+      }
+    },
+    "1.0.0": {
+      "name": "com.unity.services.tooling",
+      "version": "1.0.0",
+      "displayName": "Services Tooling",
+      "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control",
+      "category": "",
+      "dependencies": {
+        "com.unity.services.authentication": "3.3.0",
+        "com.unity.services.core": "1.12.4",
+        "com.unity.services.deployment": "1.3.0"
+      },
+      "unity": "2021.3",
+      "samples": [],
+      "_upm": {
+        "gameService": {},
+        "supportedPlatforms": [
+          "Android",
+          "iOS",
+          "Linux",
+          "Mac",
+          "PC",
+          "Windows 8 Universal",
+          "Windows 10 Universal"
+        ],
+        "changelog": "### Added\n\n- Deployment implementation for Access Control\n- New-file contextual menu item for creating Access Control configurations\n- Access Control configuration asset inspector\n- Access Control deployment documentation"
+      },
+      "relatedPackages": {
+        "com.unity.services.tooling.tests": "1.0.0"
+      },
+      "upmCi": {
+        "footprint": "c7f4ce68aaee426ead7739e48c55c62768facc4b"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.tooling@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+        "type": "git",
+        "revision": "be905e4cb39793138e3c84f8b6a17367c37ea7eb"
+      },
+      "dist": {
+        "shasum": "1f70d83751ddca15b67b8b6600f9fef3618f7cc5",
+        "tarball": "https://download-packages.unity.cn/com.unity.services.tooling/-/com.unity.services.tooling-1.0.0.tgz"
+      }
+    }
+  },
+  "etag": "\"0657e7f6aea42b8b9ac32c2fd9a275ef\"",
+  "provider": "upm",
+  "name": "com.unity.services.tooling",
+  "description": "The tooling package provides deep editor integrations such as Config as Code for Unity Cloud services that don't have or need to have their own package.\n\nCurrently supported services:\n- Access Control\n- Game Overrides",
+  "_id": "com.unity.services.tooling",
+  "cnTags": [],
+  "time": {
+    "1.4.0": "2025-09-17T03:10:01Z",
+    "1.3.0": "2025-02-10T03:19:32Z",
+    "1.2.1": "2024-12-31T03:19:31Z",
+    "1.2.0": "2024-12-05T08:30:55Z",
+    "1.1.0": "2024-06-17T09:31:19Z",
+    "1.0.0": "2024-04-17T15:25:03Z"
+  }
+}

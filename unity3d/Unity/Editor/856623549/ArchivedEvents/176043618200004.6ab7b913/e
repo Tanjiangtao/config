@@ -1,0 +1,6 @@
+(s)|{"appid":"editor","userid":"f8c96e9fef95ac6a2841bdccbaec3d01","sessionid":5660114569607118260,"platform":"LinuxEditor","platformid":16,"sdk_ver":"u2022.3.62f2c1","runMode":"human-hub","sdk_rev":"92e6e6be66dc","session_count":1,"debug_device":true,"clouduserid":"12370006223515","localprojectid":"00cf3142b215464029be9ebc76082ca4","machineid":"O0Fncc6uECEBDrJIA4GSc3iuebw=","deviceid":"25ce1e981cf74b3e9a1464feea93f75c","identity_token":"f8c96e9fef95ac6a2841bdccbaec3d01","license_hash":"86fad066e0e044d426811b61e02e32432624f163","license_kind":"Unity Personal","hub_session_guid":"7d31ef36-97d9-4afe-a897-b5bb1ebd06d9"}
+(g)|2
+(2){"type":"editor.usability.v1","msg":{"parameters":{"menuPath":"Edit/Preferences...","cause":"menuSelection"},"ts":1760436182863,"t_since_start":367280908,"subtype":"executeMenuItem","start":"2025-10-14T10:03:02.6393144Z","duration":2249396,"blocking":true}}
+{"type":"editor.navigation_project_settings_info.v1","msg":{"agent_types_count":1,"areas_count":3,"ts":1760436202386,"t_since_start":386803587}}
+{"type":"editor.appRunning.v1","msg":{"duration":386,"focus_duration":58,"play_duration":179,"user_duration":133,"focus_count":6,"play_count":1,"user_active_count":3,"local_time_offset":-28800000,"ts":1760436205645,"t_since_start":390062327}}
+(1){"type":"editor.appStop.v1","msg":{"ts":1760436205645,"t_since_start":390062421}}

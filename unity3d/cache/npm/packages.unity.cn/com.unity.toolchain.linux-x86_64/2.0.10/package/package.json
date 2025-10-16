@@ -1,0 +1,28 @@
+{
+  "name": "com.unity.toolchain.linux-x86_64",
+  "version": "2.0.10",
+  "displayName": "Toolchain Linux x64",
+  "description": "Toolchain to build player target Linux x86_64 on host Linux x86_64",
+  "keywords": [
+    "toolchain",
+    "linux"
+  ],
+  "dependencies": {
+    "com.unity.sysroot": "2.0.10",
+    "com.unity.sysroot.linux-x86_64": "2.0.9"
+  },
+  "unity": "2019.4",
+  "_upm": {
+    "changelog": "Optimized and reduced package size"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.toolchain.linux-x86_64@2.0/manual/index.html",
+  "dist": {
+    "shasum": "5a6ce31f8a65b8bae16857cfbdc108c58cdd34f9",
+    "tarball": "https://download-packages.unity.cn/com.unity.toolchain.linux-x86_64/-/com.unity.toolchain.linux-x86_64-2.0.10.tgz"
+  },
+  "_time": "2024-10-21T11:23:05Z",
+  "entitlementsInfo": {
+    "licenseType": "public"
+  },
+  "cnTags": []
+}

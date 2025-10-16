@@ -1,0 +1,13 @@
+[Unit]
+Description=Niri Idle Manager with Noctalia-shell Lock
+PartOf=graphical-session.target
+After=graphical-session.target niri.service
+Requisite=graphical-session.target niri.service
+
+[Service]
+Type=simple
+ExecStart=/home/tantao/.config/niri/scripts/swayidle.sh
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

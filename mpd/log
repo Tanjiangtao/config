@@ -1,0 +1,328 @@
+2025-10-12T21:55:30 exception: Failed to open "/home/tantao/.config/mpd/state": No such file or directory
+2025-10-12T21:55:30 exception: inotify_add_watch("/home/tantao/Music") failed: No such file or directory
+2025-10-12T21:55:30 exception: Failed to access /home/tantao/Music: No such file or directory
+2025-10-13T11:46:58 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:09 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:09 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:10 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:10 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:10 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:10 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:11 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:11 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:11 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:11 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:12 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:12 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:12 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:12 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:13 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:13 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:13 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:13 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:14 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:14 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:15 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:15 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:47:47 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T11:56:52 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T12:00:00 exception: Failed to open /home/tantao/.config/mpd/playlists: No such file or directory
+2025-10-13T12:07:39 update: added /1738557072281.mp3
+2025-10-13T12:07:39 update: added /Baby ，До свидания - 朴树.flac
+2025-10-13T12:07:39 update: added /Colorful Days - 朴树.flac
+2025-10-13T12:07:39 update: added /Forever Young - 朴树.flac
+2025-10-13T12:07:39 update: added /New Boy - 朴树.flac
+2025-10-13T12:07:39 update: added /No Fear In My Heart - 朴树.flac
+2025-10-13T12:07:39 update: added /一百万个可能 - 张含韵.flac
+2025-10-13T12:07:39 update: added /一眼万年 - .flac
+2025-10-13T12:07:39 update: added /一程山路 - 毛不易.flac
+2025-10-13T12:07:39 update: added /一纸行书 - 张含韵.flac
+2025-10-13T12:07:39 update: added /一路向北 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /七里香 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /不能说的秘密 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /且听风吟 - 朴树.flac
+2025-10-13T12:07:39 update: added /世界赠予我的 - 王菲.flac
+2025-10-13T12:07:39 update: added /东风破 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /云烟成雨 - 房东的猫.flac
+2025-10-13T12:07:39 update: added /人间 - 王菲.flac
+2025-10-13T12:07:39 update: added /以父之名 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /传奇 - 王菲.flac
+2025-10-13T12:07:39 update: added /你曾是少年 - .flac
+2025-10-13T12:07:39 update: added /你的姑娘 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /你的微笑 - .flac
+2025-10-13T12:07:39 update: added /修炼爱情 - .flac
+2025-10-13T12:07:39 update: added /借口 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /偏爱 - 张芸京.flac
+2025-10-13T12:07:39 update: added /像我这样的人.flac
+2025-10-13T12:07:39 update: added /光 - 陈粒.flac
+2025-10-13T12:07:39 update: added /兰亭序 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /写给黄淮 - 邵帅.flac
+2025-10-13T12:07:39 update: added /匆匆那年 - 王菲.flac
+2025-10-13T12:07:39 update: added /化身孤岛的鲸 - 不才.flac
+2025-10-13T12:07:39 update: added /千年之恋 - .flac
+2025-10-13T12:07:39 update: added /半句再见 - .flac
+2025-10-13T12:07:39 update: added /半岛铁盒 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /南山南 - 马頔.flac
+2025-10-13T12:07:39 update: added /反方向的钟 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /发如雪 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /可能否 - 木小雅.flac
+2025-10-13T12:07:39 update: added /可能 - 程响.flac
+2025-10-13T12:07:39 update: added /后来 - .flac
+2025-10-13T12:07:39 update: added /听不见的爱情 - 蔡佩轩.flac
+2025-10-13T12:07:39 update: added /听妈妈的话 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /告白气球 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /唯一 - .flac
+2025-10-13T12:07:39 update: added /四块五 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /回马枪 - 张含韵&湖南省湘剧院青年演员.mp3
+2025-10-13T12:07:39 update: added /因为爱情 - 陈奕迅、王菲.flac
+2025-10-13T12:07:39 update: added /在你的身边 - 摩登兄弟刘宇宁&张含韵.flac
+2025-10-13T12:07:39 update: added /在希望的田野上 - 朴树.flac
+2025-10-13T12:07:39 update: added /多幸运 - 韩安旭.flac
+2025-10-13T12:07:39 update: added /多想在平庸的生活拥抱你 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /多远都要在一起.flac
+2025-10-13T12:07:39 update: added /夜曲 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /天下 - 张杰.flac
+2025-10-13T12:07:39 update: added /天下无双 - .flac
+2025-10-13T12:07:39 update: added /天黑黑 - .flac
+2025-10-13T12:07:39 update: added /好好地 - 朴树.flac
+2025-10-13T12:07:39 update: added /如愿.flac
+2025-10-13T12:07:39 update: added /如果的事 - 范玮琪、张韶涵.flac
+2025-10-13T12:07:39 update: added /姬和不如 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /小幸运.flac
+2025-10-13T12:07:39 update: added /岁月神偷.flac
+2025-10-13T12:07:39 update: added /平凡之路 - 朴树.flac
+2025-10-13T12:07:39 update: added /年少有为 - 李荣浩.flac
+2025-10-13T12:07:39 update: added /开始懂了 - .flac
+2025-10-13T12:07:39 update: added /异客 - 乖乖甜.mp3
+2025-10-13T12:07:39 update: added /归途有风 - 王菲.flac
+2025-10-13T12:07:39 update: added /往后余生 - 王贰浪.flac
+2025-10-13T12:07:39 update: added /心墙 - .flac
+2025-10-13T12:07:39 update: added /心许百年 - .flac
+2025-10-13T12:07:39 update: added /心许百年 - 王天戈.flac
+2025-10-13T12:07:39 update: added /想你时风起 - 单依纯.flac
+2025-10-13T12:07:39 update: added /我不配 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /我也不想这样 - 王菲.flac
+2025-10-13T12:07:39 update: added /我也很想他 - .flac
+2025-10-13T12:07:39 update: added /我们俩.flac
+2025-10-13T12:07:39 update: added /我好像在哪见过你 - .flac
+2025-10-13T12:07:39 update: added /我怀念的 - 孙燕姿.flac
+2025-10-13T12:07:39 update: added /我愿意 - 王菲.flac
+2025-10-13T12:07:39 update: added /我是如此相信 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /我曾 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /我的一个道姑朋友 - 双笙（陈元汐）.flac
+2025-10-13T12:07:39 update: added /我知道 - BY2.flac
+2025-10-13T12:07:39 update: added /我落泪情绪零碎 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /我记得.flac
+2025-10-13T12:07:39 update: added /我记得【AI孙燕姿 抖音热门】 - 蓓蓓.flac
+2025-10-13T12:07:39 update: added /执迷不悔(国语版) - 王菲.flac
+2025-10-13T12:07:39 update: added /挥着翅膀的女孩 - .flac
+2025-10-13T12:07:39 update: added /推开世界的门 - 杨乃文.flac
+2025-10-13T12:07:39 update: added /搁浅 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /旅途 - 朴树.flac
+2025-10-13T12:07:39 update: added /时间煮雨 - 郁可唯.flac
+2025-10-13T12:07:39 update: added /明天会更好 - 卓依婷.flac
+2025-10-13T12:07:39 update: added /明天，你好 - .flac
+2025-10-13T12:07:39 update: added /明明就 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /晚安 - 丁芙妮.flac
+2025-10-13T12:07:39 update: added /晴天 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /暖暖 - .flac
+2025-10-13T12:07:39 update: added /暗号 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /暮色回响 - 张韶涵.flac
+2025-10-13T12:07:39 update: added /曹操 - .flac
+2025-10-13T12:07:39 update: added /曾经的你 - .flac
+2025-10-13T12:07:39 update: added /最伟大的作品 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /最美的期待 - 周笔畅.flac
+2025-10-13T12:07:39 update: added /最长的电影 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /月上歌 - 单依纯.flac
+2025-10-13T12:07:39 update: added /有可能的夜晚 - 曾轶可.flac
+2025-10-13T12:07:39 update: added /本草纲目 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /李白 - 单依纯.flac
+2025-10-13T12:07:39 update: added /枫 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /樱花草 - .flac
+2025-10-13T12:07:39 update: added /欧若拉 - .flac
+2025-10-13T12:07:39 update: added /此生不换 - .flac
+2025-10-13T12:07:39 update: added /水星记 - 郭顶.flac
+2025-10-13T12:07:39 update: added /江南 - .flac
+2025-10-13T12:07:39 update: added /江湖笑 - .flac
+2025-10-13T12:07:39 update: added /清白之年 - 朴树.flac
+2025-10-13T12:07:39 update: added /湘江中路.flac
+2025-10-13T12:07:39 update: added /烈茶 - 金池.flac
+2025-10-13T12:07:39 update: added /烟花易冷 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /爱在西元前 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /爱情讯息 - .flac
+2025-10-13T12:07:39 update: added /爱要坦荡荡 - 萧萧.flac
+2025-10-13T12:07:39 update: added /猎户星座 - 朴树.flac
+2025-10-13T12:07:39 update: added /王招君 (你看你拉住我的模样).flac
+2025-10-13T12:07:39 update: added /珠玉 - 单依纯.flac
+2025-10-13T12:07:39 update: added /生如夏花 - 朴树.flac
+2025-10-13T12:07:39 update: added /白桦林 - 朴树.flac
+2025-10-13T12:07:39 update: added /相思遥 - 张含韵.flac
+2025-10-13T12:07:39 update: added /稻香 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /童话镇-陈一发儿.flac
+2025-10-13T12:07:39 update: added /第一次爱的人 - .flac
+2025-10-13T12:07:39 update: added /简单爱 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /红尘客栈 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /红豆.flac
+2025-10-13T12:07:39 update: added /给我一首歌的时间 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /给电影人的情书 - 单依纯.flac
+2025-10-13T12:07:39 update: added /绿光 - .flac
+2025-10-13T12:07:39 update: added /胡广生 - 任素汐.flac
+2025-10-13T12:07:39 update: added /至少还有你 - 林忆莲.flac
+2025-10-13T12:07:39 update: added /致青春 - 王菲.flac
+2025-10-13T12:07:39 update: added /花海 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /若把你 - Kirsty刘瑾睿.flac
+2025-10-13T12:07:39 update: added /若月亮没来（释怀版） - 陌雪.flac
+2025-10-13T12:07:39 update: added /莫问归期 - 蒋雪儿.flac
+2025-10-13T12:07:39 update: added /蒲公英的约定 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /蓝莲花 - 许巍.flac
+2025-10-13T12:07:39 update: added /记事本 - .flac
+2025-10-13T12:07:39 update: added /说好的幸福呢 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /路过人间 - 郁可唯.flac
+2025-10-13T12:07:39 update: added /轨迹 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /这一生关于你的风景 - 隔壁老樊.flac
+2025-10-13T12:07:39 update: added /这世界那么多人.flac
+2025-10-13T12:07:39 update: added /这世界那么多人 - 莫文蔚.flac
+2025-10-13T12:07:39 update: added /退后 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /送别 - 朴树.flac
+2025-10-13T12:07:39 update: added /逆光 - .flac
+2025-10-13T12:07:39 update: added /遇见 - .flac
+2025-10-13T12:07:39 update: added /那些花儿 - 朴树.flac
+2025-10-13T12:07:39 update: added /陈一发儿 - 剑与家园.flac
+2025-10-13T12:07:39 update: added /陈一发儿 - 弦上有春秋.flac
+2025-10-13T12:07:39 update: added /陈一发儿 - 阿婆说.flac
+2025-10-13T12:07:39 update: added /隐形的翅膀 - .flac
+2025-10-13T12:07:39 update: added /霍元甲 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /青花瓷 - 周杰伦.flac
+2025-10-13T12:07:39 update: added /黑色毛衣 - 周杰伦.flac
+2025-10-13T12:09:10 exception: Not playing
+2025-10-13T12:09:16 exception: Not playing
+2025-10-13T12:17:48 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T12:18:09 player: played "如愿.flac"
+2025-10-13T12:19:33 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T12:20:15 player: played "暖暖 - .flac"
+2025-10-13T12:24:39 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T12:25:22 player: played "一百万个可能 - 张含韵.flac"
+2025-10-13T12:29:11 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-13T12:30:34 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T12:31:15 player: played "暖暖 - .flac"
+2025-10-13T12:33:53 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2025-10-13T12:43:54 player: played "世界赠予我的 - 王菲.flac"
+2025-10-13T12:58:48 player: played "世界赠予我的 - 王菲.flac"
+2025-10-13T13:09:35 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T13:10:12 player: played "一百万个可能 - 张含韵.flac"
+2025-10-13T13:13:25 player: played "致青春 - 王菲.flac"
+2025-10-13T13:17:30 player: played "世界赠予我的 - 王菲.flac"
+2025-10-13T13:50:06 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T13:50:47 player: played "爱要坦荡荡 - 萧萧.flac"
+2025-10-13T13:52:09 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T14:04:47 player: played "异客 - 乖乖甜.mp3"
+2025-10-13T14:10:09 player: played "有可能的夜晚 - 曾轶可.flac"
+2025-10-13T14:12:48 player: played "异客 - 乖乖甜.mp3"
+2025-10-13T14:30:11 player: played "李白 - 单依纯.flac"
+2025-10-13T14:31:34 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T14:32:16 player: played "暖暖 - .flac"
+2025-10-13T14:36:04 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-13T14:39:21 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T14:40:02 player: played "爱要坦荡荡 - 萧萧.flac"
+2025-10-13T14:44:06 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T14:44:28 player: played "如愿.flac"
+2025-10-13T14:47:41 player: played "致青春 - 王菲.flac"
+2025-10-13T15:13:10 player: played "世界赠予我的 - 王菲.flac"
+2025-10-13T16:30:15 player: played "世界赠予我的 - 王菲.flac"
+2025-10-13T16:33:11 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T16:33:55 player: played "月上歌 - 单依纯.flac"
+2025-10-13T16:37:11 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T16:37:53 player: played "爱要坦荡荡 - 萧萧.flac"
+2025-10-13T16:52:15 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T16:53:00 player: played "绿光 - .flac"
+2025-10-13T16:56:49 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-13T17:00:48 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T17:22:35 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T17:23:21 player: played "一百万个可能 - 张含韵.flac"
+2025-10-13T17:27:25 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T17:27:46 player: played "如愿.flac"
+2025-10-13T17:29:09 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T17:29:51 player: played "暖暖 - .flac"
+2025-10-13T17:33:05 player: played "致青春 - 王菲.flac"
+2025-10-13T17:37:39 player: played "李白 - 单依纯.flac"
+2025-10-13T17:42:19 player: played "有可能的夜晚 - 曾轶可.flac"
+2025-10-13T17:46:08 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-13T17:46:55 player: played "一百万个可能 - 张含韵.flac"
+2025-10-13T18:43:12 player: played "如愿.flac"
+2025-10-14T10:52:40 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T10:53:01 player: played "如愿.flac"
+2025-10-14T10:56:51 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T10:57:37 player: played "一百万个可能 - 张含韵.flac"
+2025-10-14T11:02:05 player: played "李白 - 单依纯.flac"
+2025-10-14T11:04:31 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T11:05:17 player: played "绿光 - .flac"
+2025-10-14T11:09:22 player: played "世界赠予我的 - 王菲.flac"
+2025-10-14T11:12:18 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T11:13:02 player: played "月上歌 - 单依纯.flac"
+2025-10-14T11:16:20 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T11:17:00 player: played "爱要坦荡荡 - 萧萧.flac"
+2025-10-14T11:19:39 player: played "异客 - 乖乖甜.mp3"
+2025-10-14T11:21:02 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T11:21:44 player: played "暖暖 - .flac"
+2025-10-14T11:25:32 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-14T11:28:46 player: played "致青春 - 王菲.flac"
+2025-10-14T11:33:26 player: played "有可能的夜晚 - 曾轶可.flac"
+2025-10-14T11:36:46 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T11:37:24 player: played "爱要坦荡荡 - 萧萧.flac"
+2025-10-14T11:42:04 player: played "有可能的夜晚 - 曾轶可.flac"
+2025-10-14T11:45:58 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-14T12:52:58 player: played "如愿.flac"
+2025-10-14T15:23:04 player: played "如愿.flac"
+2025-10-14T15:48:00 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T15:48:21 player: played "如愿.flac"
+2025-10-14T15:52:10 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T15:52:57 player: played "一百万个可能 - 张含韵.flac"
+2025-10-14T15:57:25 player: played "李白 - 单依纯.flac"
+2025-10-14T17:08:08 player: played "绿光 - .flac"
+2025-10-14T17:25:49 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T17:26:33 player: played "绿光 - .flac"
+Note: Illegal Audio-MPEG-Header 0xcf000000 at offset 8471207.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+2025-10-14T17:30:12 player: played "回马枪 - 张含韵&湖南省湘剧院青年演员.mp3"
+2025-10-14T17:32:51 player: played "异客 - 乖乖甜.mp3"
+2025-10-14T17:36:55 player: played "世界赠予我的 - 王菲.flac"
+2025-10-14T17:40:09 player: played "致青春 - 王菲.flac"
+2025-10-14T17:44:37 player: played "李白 - 单依纯.flac"
+2025-10-14T17:50:13 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T17:50:31 player: played "归途有风 - 王菲.flac"
+2025-10-14T17:53:50 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-14T17:54:33 player: played "匆匆那年 - 王菲.flac"
+2025-10-14T17:59:12 player: played "有可能的夜晚 - 曾轶可.flac"
+2025-10-14T18:03:20 player: played "时间煮雨 - 郁可唯.flac"
+2025-10-14T18:08:14 player: played "化身孤岛的鲸 - 不才.flac"
+2025-10-14T18:12:17 player: played "半句再见 - .flac"
+2025-10-14T18:16:18 player: played "陈一发儿 - 弦上有春秋.flac"
+2025-10-14T23:18:32 player: played "如愿.flac"
+2025-10-15T09:34:12 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T09:34:33 player: played "如愿.flac"
+2025-10-15T09:38:10 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T09:38:49 player: played "红豆.flac"
+2025-10-15T09:42:57 player: played "时间煮雨 - 郁可唯.flac"
+2025-10-15T09:47:06 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T09:47:27 player: played "如愿.flac"
+2025-10-15T09:51:15 player: played "如果的事 - 范玮琪、张韶涵.flac"
+2025-10-15T09:54:01 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T09:54:18 player: played "一纸行书 - 张含韵.flac"
+2025-10-15T09:55:41 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T09:56:23 player: played "暖暖 - .flac"
+2025-10-15T10:00:25 player: played "陈一发儿 - 弦上有春秋.flac"
+2025-10-15T10:03:20 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T10:04:06 player: played "月上歌 - 单依纯.flac"
+2025-10-15T10:10:57 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-15T10:11:39 player: played "月上歌 - 单依纯.flac"
+2025-10-15T18:22:16 player: played "李白 - 单依纯.flac"
+2025-10-16T00:46:53 player: played "李白 - 单依纯.flac"
+2025-10-16T12:36:55 player: played "听妈妈的话 - 周杰伦.flac"
+2025-10-16T12:40:58 player: played "半句再见 - .flac"
+2025-10-16T12:45:02 player: played "世界赠予我的 - 王菲.flac"
+2025-10-16T12:48:42 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T12:49:18 player: played "红豆.flac"
+2025-10-16T12:50:40 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T12:51:23 player: played "暖暖 - .flac"
+2025-10-16T12:56:30 player: played "听不见的爱情 - 蔡佩轩.flac"

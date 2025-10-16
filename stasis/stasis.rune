@@ -1,0 +1,100 @@
+@author "Adapted for tantao"
+@description "Stasis configuration for Niri with Noctalia-shell and video inhibition"
+
+app_default_timeout 300
+
+idle:
+  pre_suspend_command "qs -c noctalia-shell ipc call lockScreen toggle"
+  monitor_media true
+  ignore_remote_media true
+  respect_idle_inhibitors true
+  # Uncomment the line below to customize debounce
+  # debounce-seconds 4
+
+  inhibit_apps [
+    "vlc"
+    "Spotify"
+    "mpv"
+    r".*\.exe"
+    r"steam_app_.*"
+    r"firefox.*"
+  ]
+
+  # Desktop-only idle actions
+  lock_screen:
+    lock-command "qs -c noctalia-shell ipc call lockScreen toggle" # this helps identify what your lock screen is for stasis to skip that step.
+    timeout = 300
+    command "qs -c noctalia-shell ipc call lockScreen toggle"
+    resume-command "notify-send 'Welcome Back $env.USER!'"
+  end
+
+  suspend:
+    timeout 1800
+    command "systemctl suspend"
+    resume-command None
+  end
+
+  dpms:
+    timeout 330
+    command "niri msg action power-off-monitors"
+    resume-command "niri msg action power-on-monitors"
+  end
+
+  # Laptop-only AC actions
+  on_ac:
+
+    lock_screen:
+      command "qs -c noctalia-shell ipc call lockScreen toggle"
+      timeout 300
+    end
+
+    dpms:
+      command "niri msg action power-off-monitors"
+      timeout 300
+    end
+
+    brightness:
+      command "brightnessctl set 100%"
+      timeout 0
+    end
+
+    suspend:
+      command "systemctl suspend"
+      timeout 1800
+    end
+
+    custom:
+      command "notify-send 'AC mode custom action'"
+      timeout 300
+    end
+  end
+
+  # Laptop-only battery actions
+  on_battery:
+
+    lock_screen:
+      command "qs -c noctalia-shell ipc call lockScreen toggle"
+      timeout 300
+    end
+
+    dpms:
+      command "niri msg action power-off-monitors"
+      timeout 300
+    end
+
+    brightness:
+      command "brightnessctl set 30%"
+      timeout 300
+    end
+
+    suspend:
+      command "systemctl suspend"
+      timeout 1200
+    end
+
+    custom:
+      command "notify-send 'Battery mode custom action'"
+      timeout 300
+    end
+  end
+end

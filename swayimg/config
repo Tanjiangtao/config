@@ -1,0 +1,359 @@
+# vim:ft=dosini
+# swayimg/config
+# @author nate zhou
+# @since 2024,2025
+
+# 通用设置
+[general]
+# 默认模式：图片查看器模式
+mode = viewer
+# 窗口位置：跟随父窗口
+position = parent
+# 窗口大小：跟随父窗口
+size = parent
+# 接收 SIGUSR1 信号时：重新加载配置
+sigusr1 = reload
+# 接收 SIGUSR2 信号时：切换到下一个文件
+sigusr2 = next_file
+# 应用程序 ID
+app_id = swayimg
+
+# 查看器模式设置
+[viewer]
+# 查看器窗口背景色
+window = #111111
+# 查看器窗口透明度
+transparency = #111111
+# 缩放模式：最佳适配
+scale = optimal
+# 图片在窗口中的位置：居中
+position = center
+# 抗锯齿算法：mks13
+antialiasing = mks13
+# 动画循环播放：启用
+loop = yes
+# 历史记录数量
+history = 1
+# 预加载数量
+preload = 1
+
+# 幻灯片模式设置
+[slideshow]
+# 幻灯片切换时间（秒）
+time = 3
+# 幻灯片窗口大小：自动
+window = auto
+# 幻灯片窗口透明度
+transparency = #000000ff
+# 缩放模式：适应窗口
+scale = fit
+# 图片在窗口中的位置：居中
+position = center
+# 抗锯齿算法：mks13
+antialiasing = mks13
+
+# 画廊模式设置
+[gallery]
+# 缩略图大小（像素）
+size = 200
+# 缩略图缓存数量
+cache = 100
+# 预加载缩略图：启用
+preload = yes
+# 持久化存储：禁用
+pstore = no
+# 填充空间：禁用
+fill = no
+# 抗锯齿算法：mks13
+antialiasing = mks13
+# 画廊窗口背景色
+window = #111111
+# 画廊背景色
+background = #111111
+# 选中项颜色
+select = #005577
+# 边框颜色
+border = #005577
+# 阴影颜色
+shadow = #000000
+
+# 文件列表设置
+[list]
+# 排序方式：按字母顺序
+order = alpha
+# 递归显示子目录：禁用
+recursive = no
+# 显示所有文件：启用
+all = yes
+# 文件系统监控：启用
+fsmon = yes
+
+# 字体设置
+[font]
+# 字体名称
+name = SourceCodePro
+# 字体大小
+size = 14
+# 字体颜色
+color = #FFFFFF
+# 字体阴影颜色
+shadow = #000000
+
+# 信息显示设置
+[info]
+# 默认显示信息：禁用
+show = no
+# 信息显示超时（秒）：不自动隐藏
+info_timeout = 0
+# 状态显示超时（秒）：不自动隐藏
+status_timeout = 0
+
+# 查看器模式信息布局
+[info.viewer]
+# 查看器左上角信息：名称、格式、文件大小、图片尺寸、EXIF信息
+top_left = +name,+format,+filesize,+imagesize,+exif
+# 查看器右上角信息：索引
+top_right = index
+# 查看器左下角信息：缩放比例、帧数
+bottom_left = scale,frame
+# 查看器右下角信息：状态
+bottom_right = status
+
+# 幻灯片模式信息布局
+[info.slideshow]
+# 幻灯片左上角信息：无
+top_left = none
+# 幻灯片右上角信息：无
+top_right = none
+# 幻灯片左下角信息：无
+bottom_left = none
+# 幻灯片右下角信息：目录、状态
+bottom_right = dir,status
+
+# 画廊模式信息布局
+[info.gallery]
+# 画廊左上角信息：无
+top_left = none
+# 画廊右上角信息：无
+top_right = none
+# 画廊左下角信息：无
+bottom_left = none
+# 画廊右下角信息：名称、状态
+bottom_right = name,status
+
+# 查看器模式快捷键
+[keys.viewer]
+# 显示帮助
+Shift + question = help
+# 跳转到第一个文件
+g = first_file
+# 跳转到最后一个文件
+Shift+g = last_file
+# 上一个文件
+p = prev_file
+# 下一个文件
+n = next_file
+# 下一个目录
+Shift+n = next_dir
+# 上一帧
+comma = prev_frame
+# 下一帧
+period = next_frame
+# 跳过当前文件
+c = skip_file
+# 切换动画播放状态
+Space = animation
+# 切换到画廊模式
+Return = mode gallery
+# 切换到幻灯片模式
+s = mode slideshow
+# 向左移动10像素
+h = step_left 10
+# 向右移动10像素
+l = step_right 10
+# 向上移动10像素
+k = step_up 10
+# 向下移动10像素
+j = step_down 10
+# 向上移动100像素
+u = step_up 100
+# 向下移动100像素
+d = step_down 100
+# 向左移动1像素
+Shift + H = step_left 1
+# 向右移动1像素
+Shift + L = step_right 1
+# 向上移动1像素
+Shift + K = step_up 1
+# 向下移动1像素
+Shift + J = step_down 1
+# 放大10%
+Equal = zoom +10
+# 放大10%
+Plus = zoom +10
+# 放大10%
+i = zoom +10
+# 缩小10%
+Minus = zoom -10
+# 缩小10%
+o = zoom -10
+# 按宽度适配
+w = zoom width
+# 执行反色处理并显示
+Shift+i = exec convert "%" -channel RGB -negate - | swayimg -
+# 删除当前文件并重新加载
+Shift+d = exec ~/.local/bin/swayimg-rm "%" && skip_file; reload
+# 旋转当前文件并重新加载
+Shift+r = exec ~/.local/bin/swayimg-rotate "%"; reload
+# 设置当前图片为壁纸
+Shift+w = exec ~/.local/bin/setwall "%";
+# 复制当前图片到~/tmp目录
+Shift+y = exec cp "%" ~/tmp;
+# 适配窗口
+z = zoom fit
+# 填充窗口
+f = zoom fill
+# 实际大小
+0 = zoom real
+# 最佳适配
+BackSpace = zoom optimal
+# 向左旋转
+r = rotate_left
+# 随机文件
+R = rand_file
+# 向右旋转
+Ctrl +r = rotate_right
+# 垂直翻转
+v = flip_vertical
+# 水平翻转
+x = flip_horizontal
+# 切换抗锯齿模式
+Shift + a = antialiasing
+# 重新加载
+Shift + r = reload
+# 显示/隐藏信息
+m = info
+# 退出
+Escape = exit
+# 退出
+q = exit
+# 向左滚动：向右移动5像素
+ScrollLeft = step_right 5
+# 向右滚动：向左移动5像素
+ScrollRight = step_left 5
+# 向上滚动：向上移动5像素
+ScrollUp = step_up 5
+# 向下滚动：向下移动5像素
+ScrollDown = step_down 5
+# Ctrl+向上滚动：放大10%
+Ctrl+ScrollUp = zoom +10
+# Ctrl+向下滚动：缩小10%
+Ctrl+ScrollDown = zoom -10
+# Shift+向上滚动：上一个文件
+Shift+ScrollUp = prev_file
+# Shift+向下滚动：下一个文件
+Shift+ScrollDown = next_file
+# Alt+向上滚动：上一帧
+Alt+ScrollUp = prev_frame
+# Alt+向下滚动：下一帧
+Alt+ScrollDown = next_frame
+
+# 幻灯片模式快捷键
+[keys.slideshow]
+# 显示帮助
+F1 = help
+# 跳转到第一个文件
+Home = first_file
+# 跳转到最后一个文件
+End = last_file
+# 上一个文件
+Prior = prev_file
+# 下一个文件
+Next = next_file
+# 随机文件
+Shift+r = rand_file
+# 上一个目录
+Shift+d = prev_dir
+# 下一个目录
+d = next_dir
+# 暂停/继续幻灯片
+Space = pause
+# 显示/隐藏信息
+i = info
+# 全屏切换
+f = fullscreen
+# 切换模式
+Return = mode
+# 切换模式
+s = mode
+# 退出
+Escape = exit
+# 退出
+q = exit
+
+# 画廊模式快捷键
+[keys.gallery]
+# 缩略图缩小10%
+Minus=thumb -10
+# 缩略图放大10%
+Equal=thumb +10
+# 显示帮助
+Shift + question = help
+# 跳转到第一个文件
+g = first_file
+# 跳转到最后一个文件
+Shift+g = last_file
+# 向左移动
+h = step_left
+# 向右移动
+l = step_right
+# 向上移动
+k = step_up
+# 向下移动
+j = step_down
+# 上一页
+p = page_up
+# 下一页
+n = page_down
+# 跳过当前文件
+c = skip_file
+# 切换到查看器模式
+Return = mode viewer
+# 切换到幻灯片模式
+s = mode slideshow
+# 切换抗锯齿模式
+Shift + a = antialiasing
+# 重新加载
+r = reload
+# 显示/隐藏信息
+m = info
+# 执行反色处理并显示
+Shift+i = exec convert "%" -channel RGB -negate - | swayimg -
+# 删除当前文件并重新加载
+Shift+d = exec ~/.local/bin/swayimg-rm "%" && skip_file; reload
+# 注释掉以解决冻结问题
+#Shift+r = exec ~/.local/bin/swayimg-rotate "%"; reload
+# 设置当前图片为壁纸
+Shift+w = exec ~/.local/bin/setwall "%";
+# 复制当前图片到~/tmp目录
+Shift+y = exec cp "%" ~/tmp;
+# 退出
+Escape = exit
+# 退出
+q = exit
+# 鼠标操作
+# 向左滚动：向右移动
+ScrollLeft = step_right
+# 向右滚动：向左移动
+ScrollRight = step_left
+# 向上滚动：向上移动
+ScrollUp = step_up
+# 向下滚动：向下移动
+ScrollDown = step_down
+# Ctrl+向上滚动：缩略图放大20%
+Ctrl+ScrollUp = thumb +20
+# Ctrl+向下滚动：缩略图缩小20%
+Ctrl+ScrollDown = thumb -20
+# 左键点击：切换到查看器模式
+MouseLeft = mode viewer
+

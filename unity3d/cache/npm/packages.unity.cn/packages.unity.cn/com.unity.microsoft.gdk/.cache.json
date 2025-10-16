@@ -1,0 +1,495 @@
+{
+  "dist-tags": {
+    "latest": "1.4.5"
+  },
+  "versions": {
+    "1.4.5": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.4.5",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "keywords": [
+        "microsoft",
+        "gdk",
+        "api"
+      ],
+      "dependencies": {
+        "com.unity.microsoft.gdk.discovery": "1.1.0"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.4/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "b539c4bc53ac21e2dae99e6082143c20ee32f015",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.4.5.tgz"
+      },
+      "samples": [
+        {
+          "path": "Samples~/Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "displayName": "Achievements"
+        },
+        {
+          "path": "Samples~/Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "displayName": "Cloud Saves"
+        },
+        {
+          "path": "Samples~/GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "displayName": "GameSave"
+        },
+        {
+          "path": "Samples~/In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "displayName": "In Game Store"
+        },
+        {
+          "path": "Samples~/Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "displayName": "Leaderboards"
+        },
+        {
+          "path": "Samples~/Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "displayName": "Sign-in"
+        },
+        {
+          "path": "Samples~/SocialManager",
+          "description": "This demo shows how to use Social Manager APIs",
+          "displayName": "Social Manager"
+        },
+        {
+          "path": "Samples~/SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "displayName": "SpeechSynthesizer"
+        },
+        {
+          "path": "Samples~/Users",
+          "description": "This demo shows how to use users APIs",
+          "displayName": "Users"
+        }
+      ],
+      "_upm": {
+        "changelog": "### Added\n- Changed the way the GDK SDK is discovered. Now uses the `com.unity.microsoft.gdk.discovery` package.\n- Support for using Microsoft Game Development Kit (GDK) without install. See package documentation.\n- Support for user specified GDK Edition (Windows Standalone platform only):\n- Added a `GdkEdition.json` file to the `Assets/Plugins/GDK` path. This file tracks the GDK Edition from which the GDK assembles originated. Changing the edition number in this file will cause a re-import of the GDK Assemblies.\n- Added `SDK.GetGdkEdition` to query the selected edition at runtime. This relies on an auto generated `GDKEdition.asset` being included in the `Resources/GDKEditionAutoGen` path (automatically removed from the project post build).\n- Added GDK support for Play Mode, allowing developers to test their Xbox integration features directly within the editor (see known issues below).\n\n### Fixed\n- Fix pinvoke DllImportAttribute name for libHttpClient.GDK.dll apis and ensure the DLL is available for the active GDK.\n- Fix missing SafeHandle support for HCWebsocketHandle\n- Fix XblSocialManagerUser and XblSocialRelationship to support new member 'isFriend' for GDK versions later than October 2024 GDK. Earlier versions will also include the member but it will be set to false by default.\n\n### Changed\n- Updated for the `April 25 (250400)` release of the Microsoft GDK\n- Modified the samples to no longer use Awaitables (on 6.0 or newer) and asynchronous Tasks (in older versions of Unity). For Awaitables, this is because they are dependent on the Time.timeScale setting, so the Awaitable.WaitForSecondsAsync call could take more than the specified time. For C# asynchronous Tasks, the worry is that because Tasks are a reference type, using them in the tight while loop to await for 32ms means a new Task object is created every iteration and needs to then be garbage collected once it is no longer used.\n### Removed\n- Removed old GDK SDK discovery code.\n\n### Known Issues\n- Under some circumstances the GDK runtime services may fail to initialize. If you are editing or switching the `Microsoft Game Config` settings or changing the active GDK Settings between in-editor play sessions and experience errors it may be necessary to restart the editor."
+      }
+    },
+    "1.4.4": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.4.4",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "keywords": [
+        "microsoft",
+        "gdk",
+        "api"
+      ],
+      "dependencies": {
+        "com.unity.microsoft.gdk.discovery": "1.1.0"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.4/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "d309f0bce51afc6dded55e3923d869d0c30c04f7",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.4.4.tgz"
+      },
+      "samples": [
+        {
+          "path": "Samples~/Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "displayName": "Achievements"
+        },
+        {
+          "path": "Samples~/Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "displayName": "Cloud Saves"
+        },
+        {
+          "path": "Samples~/GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "displayName": "GameSave"
+        },
+        {
+          "path": "Samples~/In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "displayName": "In Game Store"
+        },
+        {
+          "path": "Samples~/Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "displayName": "Leaderboards"
+        },
+        {
+          "path": "Samples~/Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "displayName": "Sign-in"
+        },
+        {
+          "path": "Samples~/SocialManager",
+          "description": "This demo shows how to use Social Manager APIs",
+          "displayName": "Social Manager"
+        },
+        {
+          "path": "Samples~/SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "displayName": "SpeechSynthesizer"
+        },
+        {
+          "path": "Samples~/Users",
+          "description": "This demo shows how to use users APIs",
+          "displayName": "Users"
+        }
+      ],
+      "_upm": {
+        "changelog": "### Added\n- Changed the way the GDK SDK is discovered. Now uses the `com.unity.microsoft.gdk.discovery` package.\n- Support for using Microsoft Game Development Kit (GDK) without install. See package documentation.\n- Support for user specified GDK Edition (Windows Standalone platform only):\n- Added a `GdkEdition.json` file to the `Assets/Plugins/GDK` path. This file tracks the GDK Edition from which the GDK assembles originated. Changing the edition number in this file will cause a re-import of the GDK Assemblies.\n- Added `SDK.GetGdkEdition` to query the selected edition at runtime. This relies on an auto generated `GDKEdition.asset` being included in the `Resources/GDKEditionAutoGen` path (automatically removed from the project post build).\n- Added GDK support for Play Mode, allowing developers to test their Xbox integration features directly within the editor (see known issues below).\n\n### Fixed\n- Fix pinvoke DllImportAttribute name for libHttpClient.GDK.dll apis and ensure the DLL is available for the active GDK.\n- Fix missing SafeHandle support for HCWebsocketHandle\n- Fix XblSocialManagerUser and XblSocialRelationship to support new member 'isFriend' for GDK versions later than October 2024 GDK. Earlier versions will also include the member but it will be set to false by default.\n\n### Changed\n- Updated for the `April 25 (250400)` release of the Microsoft GDK\n- Modified the samples to no longer use Awaitables (on 6.0 or newer) and asynchronous Tasks (in older versions of Unity). For Awaitables, this is because they are dependent on the Time.timeScale setting, so the Awaitable.WaitForSecondsAsync call could take more than the specified time. For C# asynchronous Tasks, the worry is that because Tasks are a reference type, using them in the tight while loop to await for 32ms means a new Task object is created every iteration and needs to then be garbage collected once it is no longer used.\n### Removed\n- Removed old GDK SDK discovery code.\n\n### Known Issues\n- Under some circumstances the GDK runtime services may fail to initialize. If you are editing or switching the `Microsoft Game Config` settings or changing the active GDK Settings between in-editor play sessions and experience errors it may be necessary to restart the editor."
+      }
+    },
+    "1.3.0": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.3.0",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "dependencies": {},
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.3/manual/index.html",
+      "unity": "2021.3",
+      "dist": {
+        "shasum": "1bc5fb05d04985a1e421dcaa7b836ed2f135627b",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.3.0.tgz"
+      },
+      "samples": [
+        {
+          "path": "Samples~/Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "displayName": "Achievements"
+        },
+        {
+          "path": "Samples~/Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "displayName": "Cloud Saves"
+        },
+        {
+          "path": "Samples~/GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "displayName": "GameSave"
+        },
+        {
+          "path": "Samples~/In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "displayName": "In Game Store"
+        },
+        {
+          "path": "Samples~/Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "displayName": "Leaderboards"
+        },
+        {
+          "path": "Samples~/Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "displayName": "Sign-in"
+        },
+        {
+          "path": "Samples~/SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "displayName": "SpeechSynthesizer"
+        },
+        {
+          "path": "Samples~/Users",
+          "description": "This demo shows how to use users APIs",
+          "displayName": "Users"
+        }
+      ],
+      "_upm": {
+        "changelog": "### Added\n- Added SafeHandle as a base class for all XBL Handles. Unclosed handles will autorelease once out of scope.\n- Added support to October 2024 GDK new Extension Libraries paths.\n- Generated GDK Settings script file now marks `gameConfigSandbox` as obsolete, it will be removed in a future release.\n\n### Fixed\n- Fix XPersistentLocalStorageGetPath interop missmatch for string path.\n- XGamingRuntimeThunks.dll incorrectly included in some builds.\n\n### Changed\n- Automatically imported GDK assemblies are now marked as Editor ONLY by default. This makes the assemblies available for in Editor Playmode whilst avoiding the assemblies being deployed to none-compatible target platforms. When using the __Microsoft GDK API__ package without the __Microsoft GDK Tools__ package, the developer will be responsible for ensuring that these assemblies are correctly deployed."
+      }
+    },
+    "1.2.3": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.2.3",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "dependencies": {},
+      "unity": "2021.3",
+      "license": "Unity Companion Package License v1.0",
+      "samples": [
+        {
+          "displayName": "Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "path": "Samples~/Achievements"
+        },
+        {
+          "displayName": "Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "path": "Samples~/Cloud Saves"
+        },
+        {
+          "displayName": "GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "path": "Samples~/GameSave"
+        },
+        {
+          "displayName": "In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "path": "Samples~/In Game Store"
+        },
+        {
+          "displayName": "Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "path": "Samples~/Leaderboards"
+        },
+        {
+          "displayName": "Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "path": "Samples~/Sign-in"
+        },
+        {
+          "displayName": "SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "path": "Samples~/SpeechSynthesizer"
+        },
+        {
+          "displayName": "Users",
+          "description": "This demo shows how to use users APIs",
+          "path": "Samples~/Users"
+        }
+      ],
+      "hideInEditor": false,
+      "_upm": {
+        "changelog": "### Added\n- Added public XblAchievementsAddAchievementProgressChangeHandler and XblAchievementsRemoveAchievementProgressChangeHandler\n\n### Fixed\n- Corrected samples and documentation that incorrectly recommend using coroutine to pull GDK events.\n- Improved mouse handling in the samples.\n- Updated sample installation documentation to mention dependency on the Input System package.\n- Create/OpenKey Access denied error on Windows 11.\n- Copy libHttpClient.GDK.dll to `Assets/Plugin/GDK` project folder when using June 2024 GDK.\n\n### Changed\n-\n### Removed\n-\n### Known Issues\n-"
+      },
+      "upmCi": {
+        "footprint": "e49a55d62e19e0c13bc86edc0d5e396b81aa52e1"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.2/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/com.unity.microsoft.gdk.git",
+        "type": "git",
+        "revision": "e8f4e1d6005c950aa53dc472c2ad74ffb3eb8007"
+      },
+      "dist": {
+        "shasum": "8dd32cebecde794b24cc4b71dd72dd92bc57d468",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.2.3.tgz"
+      }
+    },
+    "1.1.0": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.1.0",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "category": "",
+      "dependencies": {},
+      "unity": "2021.3",
+      "license": "Unity Companion Package License v1.0",
+      "samples": [
+        {
+          "displayName": "Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "path": "Samples~/Achievements"
+        },
+        {
+          "displayName": "Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "path": "Samples~/Cloud Saves"
+        },
+        {
+          "displayName": "GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "path": "Samples~/GameSave"
+        },
+        {
+          "displayName": "In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "path": "Samples~/In Game Store"
+        },
+        {
+          "displayName": "Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "path": "Samples~/Leaderboards"
+        },
+        {
+          "displayName": "Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "path": "Samples~/Sign-in"
+        },
+        {
+          "displayName": "SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "path": "Samples~/SpeechSynthesizer"
+        },
+        {
+          "displayName": "Users",
+          "description": "This demo shows how to use users APIs",
+          "path": "Samples~/Users"
+        }
+      ],
+      "hideInEditor": false,
+      "_upm": {
+        "changelog": "### Added\n- Added public HR constants to Interop.HR to maintain back compatibility with possible upgrade paths\n- Added public constructor to XblTitleStorageBlobMetadata.\n- Added public XGameSaveSubmitBlobWrite which accepts 'length' parameter.\n\n### Fixed\n- Fixed the XStoreQueryAssociatedProductsAsync wrapper always returning an error.\n- Fixed the Speech Synthesizer Sample UI to not lock when the close button is pressed.\n- Fixed Leaderboard sample: better handling of `Http429TooManyRequests`.\n- Fixed XGameSaveInitializeProviderResult and XGameSaveInitializeProvider to bypass offline mode handles.\n- Fixed XblSocialManagerPresenceTitleRecord struct interop missmatch.\n- Fixed XblSocialManagerUserGroupGetLocalUser, XblSocialManagerPresenceTitleRecord and XblSocialManagerEvent to avoid XUserHandle autoreleases.\n- Fixed abort pulling Gdk Dll's into the project when the GDK is not installed on the local machine.\n- Fixed API's with optional parameters to accept null.\n- Fixed XUserGetTokenAndSignatureUtf16Async to support null arrays passed to it for the Header and Body parameters.\n- Fixed player could crash after XblSocialManagerCreateSocialUserGroupFromFilters call.\n\n### Changed\n- Updated the included fall-back XGameRuntime thunks DLL."
+      },
+      "upmCi": {
+        "footprint": "d6e0b6c82ba8e4b7bbb4bbb5806e447854887272"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.1/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/com.unity.microsoft.gdk.git",
+        "type": "git",
+        "revision": "670ea9e7307ceb1dab7c11889cf89d6b75709b66"
+      },
+      "dist": {
+        "shasum": "9353696290eaeccd63a26eb54100d3ef9ed95536",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.1.0.tgz"
+      }
+    },
+    "1.0.0": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.0.0",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "category": "",
+      "dependencies": {},
+      "unity": "2021.3",
+      "license": "Unity Companion Package License v1.0",
+      "samples": [
+        {
+          "displayName": "Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "path": "Samples~/Achievements"
+        },
+        {
+          "displayName": "Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "path": "Samples~/Cloud Saves"
+        },
+        {
+          "displayName": "GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "path": "Samples~/GameSave"
+        },
+        {
+          "displayName": "In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "path": "Samples~/In Game Store"
+        },
+        {
+          "displayName": "Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "path": "Samples~/Leaderboards"
+        },
+        {
+          "displayName": "Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "path": "Samples~/Sign-in"
+        },
+        {
+          "displayName": "SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "path": "Samples~/SpeechSynthesizer"
+        },
+        {
+          "displayName": "Users",
+          "description": "This demo shows how to use users APIs",
+          "path": "Samples~/Users"
+        }
+      ],
+      "hideInEditor": false,
+      "_upm": {
+        "changelog": "### Fixed\n- Speech Synthesizer Sample: Avoid trying to close already closed speech synthesizer.\n- Speech Synthesizer Sample: Make UI active/inactive based on speech synthesizer state.\n\n### Changed\n- Bump package version"
+      },
+      "upmCi": {
+        "footprint": "60c71d5472b3a6d5c8270e28a8e73848bd18643d"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/com.unity.microsoft.gdk.git",
+        "type": "git",
+        "revision": "ffb7cdd0c86df3b8141c0bb804b959d7c172843c"
+      },
+      "dist": {
+        "shasum": "1b57c59ee4f7e1cf081e85f610ae5d1a73a8e046",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.0.0.tgz"
+      }
+    },
+    "1.0.0-pre.3": {
+      "name": "com.unity.microsoft.gdk",
+      "version": "1.0.0-pre.3",
+      "displayName": "Microsoft GDK API",
+      "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+      "category": "",
+      "dependencies": {},
+      "unity": "2021.3",
+      "license": "Unity Companion Package License v1.0",
+      "samples": [
+        {
+          "displayName": "Achievements",
+          "description": "This demo shows how to use Achievements APIs",
+          "path": "Samples~/Achievements"
+        },
+        {
+          "displayName": "Cloud Saves",
+          "description": "This demo shows how to use Cloud Saves APIs",
+          "path": "Samples~/Cloud Saves"
+        },
+        {
+          "displayName": "GameSave",
+          "description": "This demo shows how to use Game Save APIs",
+          "path": "Samples~/GameSave"
+        },
+        {
+          "displayName": "In Game Store",
+          "description": "This demo shows how to use In Game Store APIs",
+          "path": "Samples~/In Game Store"
+        },
+        {
+          "displayName": "Leaderboards",
+          "description": "This demo shows how to use leaderboards APIs",
+          "path": "Samples~/Leaderboards"
+        },
+        {
+          "displayName": "Sign-in",
+          "description": "This demo shows how to use sign-in APIs",
+          "path": "Samples~/Sign-in"
+        },
+        {
+          "displayName": "SpeechSynthesizer",
+          "description": "This demo shows how to use speech synthesizer APIs",
+          "path": "Samples~/SpeechSynthesizer"
+        },
+        {
+          "displayName": "Users",
+          "description": "This demo shows how to use users APIs",
+          "path": "Samples~/Users"
+        }
+      ],
+      "hideInEditor": false,
+      "_upm": {
+        "changelog": "### Added\n- Added support for XblPrivacyCheckPermissionForAnonymousUserAsync.\n\n### Changed\n- Bumped version to keep inline with other related packages.\n- Revised documentation"
+      },
+      "upmCi": {
+        "footprint": "42d70358cdc009f0be6d0a6defddad664979411e"
+      },
+      "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.microsoft.gdk@1.0/manual/index.html",
+      "repository": {
+        "url": "https://github.cds.internal.unity3d.com/unity/com.unity.microsoft.gdk.git",
+        "type": "git",
+        "revision": "fe32779188e4c6324679fb30599358fe68b21b18"
+      },
+      "dist": {
+        "shasum": "929c1e26aaf3de8df1c5126cf403384bfdd9a7e7",
+        "tarball": "https://download-packages.unity.cn/com.unity.microsoft.gdk/-/com.unity.microsoft.gdk-1.0.0-pre.3.tgz"
+      }
+    }
+  },
+  "etag": "\"056301160f1d8797a47afcec2380bbed\"",
+  "provider": "upm",
+  "name": "com.unity.microsoft.gdk",
+  "description": "Provides support for the Microsoft Game Development Kit making it available to approved platforms. Requires the Microsoft platform APIs to be pre-installed.",
+  "_id": "com.unity.microsoft.gdk",
+  "cnTags": [],
+  "time": {
+    "1.4.5": "2025-09-20T03:12:00Z",
+    "1.4.4": "2025-07-31T03:12:01Z",
+    "1.3.0": "2024-12-05T09:02:20Z",
+    "1.2.3": "2024-09-17T10:13:35Z",
+    "1.1.0": "2024-07-01T12:59:09Z",
+    "1.0.0": "2024-03-28T10:42:17Z",
+    "1.0.0-pre.3": "2024-03-18T08:59:10Z"
+  }
+}

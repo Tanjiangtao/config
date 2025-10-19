@@ -326,3 +326,21 @@ Note: Hit end of (available) data during resync.
 2025-10-16T12:50:40 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
 2025-10-16T12:51:23 player: played "暖暖 - .flac"
 2025-10-16T12:56:30 player: played "听不见的爱情 - 蔡佩轩.flac"
+2025-10-16T15:26:17 player: played "世界赠予我的 - 王菲.flac"
+2025-10-16T15:31:20 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T15:31:38 player: played "归途有风 - 王菲.flac"
+2025-10-16T15:36:22 player: played "樱花草 - .flac"
+2025-10-16T15:40:26 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T15:40:47 player: played "如愿.flac"
+2025-10-16T15:43:13 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T15:44:00 player: played "绿光 - .flac"
+2025-10-16T15:46:57 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T15:47:40 player: played "月上歌 - 单依纯.flac"
+2025-10-16T15:50:56 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-16T21:14:21 player: played "匆匆那年 - 王菲.flac"
+2025-10-17T00:36:36 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-17T02:43:04 player: played "匆匆那年 - 王菲.flac"
+2025-10-17T09:05:56 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-18T03:14:12 player: played "匆匆那年 - 王菲.flac"
+2025-10-18T17:39:42 flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+2025-10-18T18:57:45 player: played "匆匆那年 - 王菲.flac"

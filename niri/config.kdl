@@ -258,8 +258,9 @@ layout {
 // spawn-at-startup "waybar"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "fcitx5"
+spawn-at-startup "udiskie"
 spawn-at-startup "niri-switch-daemon"
-// spawn-at-startup "foot" "--server"
+spawn-at-startup "foot" "--server"
 // spawn-at-startup "/home/tantao/.config/niri/scripts/random-wallpaper.sh"
 
 
@@ -312,7 +313,15 @@ window-rule {
     default-column-width {}
 }
 
+window-rule {
+    match app-id=r#"foot*$"#
+    open-floating true
+}
 
+window-rule {
+    match app-id=r#"footclient*$"#
+    open-floating true
+}
 // 默认将 Firefox 画中画播放器设为浮动窗口。
 window-rule {
     // 此 app-id 正则表达式对以下两种情况均生效：
@@ -355,7 +364,9 @@ binds {
     Mod+M { spawn "/home/tantao/.config/niri/scripts/openNcmpcpp.sh";}
     Mod+P { spawn "/home/tantao/.config/niri/scripts/random-wallpaper.sh";}
     Mod+B { spawn "firefox";}
+    Mod+S { spawn "localsend";}
     Mod+E { spawn "alacritty" "-e" "yazi";}
+    Mod+N { spawn "footclient" "-e" "btop";}
     Alt+Tab { spawn "niri-switch"; }
     Mod+Tab { spawn "niri-switch" "--previous"; }
     // 按键由多个修饰键（用 + 连接）和末尾的 XKB 键名组成。
@@ -372,6 +383,7 @@ binds {
 
     // 运行程序的建议绑定：终端、应用启动器、屏幕锁定工具。
     Mod+Return hotkey-overlay-title="打开终端：alacritty" { spawn "alacritty"; }
+    Mod+Shift+Return hotkey-overlay-title="打开终端：foot" { spawn "/home/tantao/.config/niri/scripts/resize_footclient.sh"; }
     Mod+Space hotkey-overlay-title="运行应用：fuzzel" { spawn "fuzzel"; }
     Mod+T {spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "toggle";}
 
@@ -596,7 +608,7 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
+    Mod+A { spawn "foamshot" "-p" "/home/tantao/Pictures/Screenshots/Screenshot" "-n" "%Y-%m-%d %H-%M-%S.png"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 

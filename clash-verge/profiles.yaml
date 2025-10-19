@@ -18,10 +18,10 @@ items:
   - name: GLOBAL
     now: 🇭🇰 香港Z02 | IEPL
   extra:
-    upload: 510322282
-    download: 96143101523
+    upload: 603718771
+    download: 107234931294
     total: 322122547200
     expire: 1780756368
-  updated: 1760588520
+  updated: 1760830661
   option:
     update_interval: 360

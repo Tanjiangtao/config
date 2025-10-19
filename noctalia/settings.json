@@ -10,7 +10,7 @@
         "useApp2Unit": true
     },
     "audio": {
-        "cavaFrameRate": 60,
+        "cavaFrameRate": 165,
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
@@ -197,7 +197,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1760428999000,
+        "lastSeenTs": 1760714743000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -266,12 +266,12 @@
             {
                 "directory": "/home/tantao/Pictures/Wallpapers",
                 "name": "eDP-1",
-                "wallpaper": "/home/tantao/Pictures/Wallpapers/【哲风壁纸】动漫角色-名侦探柯南.png"
+                "wallpaper": "/home/tantao/Pictures/Wallpapers/【哲风壁纸】兔子朱迪-动物搭档.png"
             },
             {
                 "directory": "/home/tantao/Pictures/Wallpapers",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/tantao/Pictures/Wallpapers/【哲风壁纸】动漫角色-名侦探柯南.png"
+                "wallpaper": "/home/tantao/Pictures/Wallpapers/【哲风壁纸】兔子朱迪-动物搭档.png"
             }
         ],
         "randomEnabled": true,

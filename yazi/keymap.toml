@@ -8,7 +8,7 @@ keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "退出视觉模式、清除选择或取消搜索" },
 	{ on = "<C-[>", run = "escape",             desc = "退出视觉模式、清除选择或取消搜索" },
 	{ on = "q",     run = "quit",               desc = "退出程序" },
-	{ on = "Q",     run = "quit --no-cwd-file", desc = "退出且不输出 cwd 文件" },
+    { on = "Q",     run = "quit --no-cwd-file", desc = "退出且不输出 cwd 文件" },
 	{ on = "<C-c>", run = "close",              desc = "关闭当前标签页，如果是最后一个则退出" },
 	{ on = "<C-z>", run = "suspend",            desc = "暂停程序" },
 
@@ -128,6 +128,7 @@ keymap = [
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "跳至 ~/.config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "跳至 ~/Downloads" },
 	{ on = [ "g", "p" ],       run = "cd ~/Pictures",   desc = "跳至 ~/Pictures" },
+	{ on = [ "g", "m" ],       run = "cd /run/media/tantao",   desc = "跳至U盘" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "交互式跳转" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "跟随悬停的符号链接" },
 

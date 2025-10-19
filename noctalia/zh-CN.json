@@ -1,0 +1,26 @@
+{
+  "color-scheme": {
+    "predefined": {
+      "schemes": {
+        "Monokai": "莫诺凯",
+        "Dracula": "德古拉",
+        "Nord": "北极",
+        "Catppuccin": "卡布钦诺",
+        "Solarized": "日光化"
+      }
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "font": "字体",
+    "language": "语言",
+    "theme": "主题",
+    "apply": "应用",
+    "cancel": "取消"
+  },
+  "bar": {
+    "clock": "时钟",
+    "battery": "电池",
+    "network": "网络"
+  }
+}

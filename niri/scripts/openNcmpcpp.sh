@@ -7,5 +7,5 @@ if not pgrep -x mpd > /dev/null
     # 使用 systemctl 启动用户级的 mpd 服务
     systemctl --user start mpd
 end
-# 使用 Alacritty 打开 ncmpcpp
-alacritty -e ncmpcpp &
+# 使用 foot 打开 ncmpcpp
+footclient -e ncmpcpp &
